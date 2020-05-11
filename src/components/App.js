@@ -2,6 +2,7 @@ import React from 'react';
 import PropertySummaryList from './PropertySummaryList.js';
 import jsonData from '../assets/data.json';
 
+
 const App = () => {
   const properties = JSON.parse(JSON.stringify(jsonData));
 
