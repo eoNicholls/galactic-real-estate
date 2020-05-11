@@ -1,0 +1,596 @@
+[
+  {
+    "star": "Procyon",
+    "planet": "VII",
+    "size": "small",
+    "cost": 481000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "II",
+    "size": "medium",
+    "cost": 892000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "VIII",
+    "size": "large",
+    "cost": 1004000
+  },
+  {
+    "star": "Procyon",
+    "planet": "I",
+    "size": "large",
+    "cost": 402000
+  },
+  {
+    "star": "Lalande",
+    "planet": "XI",
+    "size": "medium",
+    "cost": 392000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "V",
+    "size": "small",
+    "cost": 802000
+  },
+  {
+    "star": "Barnard",
+    "planet": "XIII",
+    "size": "small",
+    "cost": 560000
+  },
+  {
+    "star": "Ross 248",
+    "planet": "IV",
+    "size": "small",
+    "cost": 1182000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "V",
+    "size": "extra large",
+    "cost": 80000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "XI",
+    "size": "extra small",
+    "cost": 1164000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "XVI",
+    "size": "large",
+    "cost": 284000
+  },
+  {
+    "star": "Epsilon Eridani",
+    "planet": "V",
+    "size": "large",
+    "cost": 781000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "V",
+    "size": "extra small",
+    "cost": 179000
+  },
+  {
+    "star": "Kruger",
+    "planet": "IX",
+    "size": "small",
+    "cost": 122000
+  },
+  {
+    "star": "Barnard",
+    "planet": "XIII",
+    "size": "medium",
+    "cost": 629000
+  },
+  {
+    "star": "Procyon",
+    "planet": "VII",
+    "size": "extra small",
+    "cost": 975000
+  },
+  {
+    "star": "Tau Ceti",
+    "planet": "IV",
+    "size": "extra large",
+    "cost": 744000
+  },
+  {
+    "star": "Sirius B",
+    "planet": "VII",
+    "size": "extra small",
+    "cost": 1140000
+  },
+  {
+    "star": "Struve 2398 A",
+    "planet": "XIV",
+    "size": "medium",
+    "cost": 67000
+  },
+  {
+    "star": "Sirius B",
+    "planet": "XI",
+    "size": "extra small",
+    "cost": 1010000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "XIV",
+    "size": "large",
+    "cost": 232000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "VI",
+    "size": "extra small",
+    "cost": 1072000
+  },
+  {
+    "star": "Ross 154",
+    "planet": "XV",
+    "size": "extra small",
+    "cost": 1181000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "XI",
+    "size": "medium",
+    "cost": 558000
+  },
+  {
+    "star": "Ross 154",
+    "planet": "XV",
+    "size": "small",
+    "cost": 445000
+  },
+  {
+    "star": "Struve 2398 A",
+    "planet": "XVI",
+    "size": "extra small",
+    "cost": 991000
+  },
+  {
+    "star": "Gliese",
+    "planet": "VII",
+    "size": "extra large",
+    "cost": 560000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "I",
+    "size": "medium",
+    "cost": 533000
+  },
+  {
+    "star": "Barnard",
+    "planet": "XIV",
+    "size": "extra large",
+    "cost": 820000
+  },
+  {
+    "star": "Tau Ceti",
+    "planet": "XII",
+    "size": "extra small",
+    "cost": 685000
+  },
+  {
+    "star": "Kruger",
+    "planet": "XII",
+    "size": "medium",
+    "cost": 934000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "XIII",
+    "size": "extra large",
+    "cost": 936000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "I",
+    "size": "medium",
+    "cost": 1035000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "XIII",
+    "size": "extra large",
+    "cost": 591000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "VIII",
+    "size": "extra large",
+    "cost": 1176000
+  },
+  {
+    "star": "Procyon",
+    "planet": "XVI",
+    "size": "extra small",
+    "cost": 100000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "XVI",
+    "size": "extra small",
+    "cost": 172000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "VIII",
+    "size": "medium",
+    "cost": 433000
+  },
+  {
+    "star": "Struve 2398 A",
+    "planet": "II",
+    "size": "medium",
+    "cost": 960000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "XI",
+    "size": "extra small",
+    "cost": 1175000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "XI",
+    "size": "small",
+    "cost": 90000
+  },
+  {
+    "star": "Lalande",
+    "planet": "XV",
+    "size": "medium",
+    "cost": 985000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "II",
+    "size": "extra large",
+    "cost": 665000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "X",
+    "size": "large",
+    "cost": 91000
+  },
+  {
+    "star": "Tau Ceti",
+    "planet": "VI",
+    "size": "extra small",
+    "cost": 635000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "VI",
+    "size": "medium",
+    "cost": 251000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "V",
+    "size": "small",
+    "cost": 292000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "XVI",
+    "size": "large",
+    "cost": 90000
+  },
+  {
+    "star": "Sirius A",
+    "planet": "VIII",
+    "size": "extra small",
+    "cost": 597000
+  },
+  {
+    "star": "Ross 154",
+    "planet": "VIII",
+    "size": "large",
+    "cost": 89000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "IV",
+    "size": "extra small",
+    "cost": 1117000
+  },
+  {
+    "star": "Luyten",
+    "planet": "IX",
+    "size": "extra small",
+    "cost": 395000
+  },
+  {
+    "star": "Epsilon Eridani",
+    "planet": "IX",
+    "size": "small",
+    "cost": 211000
+  },
+  {
+    "star": "Epsilon Eridani",
+    "planet": "VI",
+    "size": "medium",
+    "cost": 170000
+  },
+  {
+    "star": "Sirius B",
+    "planet": "X",
+    "size": "large",
+    "cost": 776000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "XV",
+    "size": "extra large",
+    "cost": 590000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "XI",
+    "size": "small",
+    "cost": 648000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "I",
+    "size": "large",
+    "cost": 1164000
+  },
+  {
+    "star": "Lalande",
+    "planet": "VIII",
+    "size": "large",
+    "cost": 307000
+  },
+  {
+    "star": "Sirius A",
+    "planet": "V",
+    "size": "large",
+    "cost": 310000
+  },
+  {
+    "star": "Tau Ceti",
+    "planet": "VII",
+    "size": "large",
+    "cost": 773000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "II",
+    "size": "medium",
+    "cost": 300000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "XII",
+    "size": "medium",
+    "cost": 1102000
+  },
+  {
+    "star": "Sirius A",
+    "planet": "X",
+    "size": "extra small",
+    "cost": 137000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "II",
+    "size": "small",
+    "cost": 823000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "IX",
+    "size": "large",
+    "cost": 1037000
+  },
+  {
+    "star": "Ross 154",
+    "planet": "XVI",
+    "size": "large",
+    "cost": 992000
+  },
+  {
+    "star": "Ross 248",
+    "planet": "X",
+    "size": "extra small",
+    "cost": 1117000
+  },
+  {
+    "star": "Sirius A",
+    "planet": "XII",
+    "size": "extra large",
+    "cost": 69000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "XVI",
+    "size": "large",
+    "cost": 127000
+  },
+  {
+    "star": "Ross 248",
+    "planet": "I",
+    "size": "large",
+    "cost": 215000
+  },
+  {
+    "star": "Barnard",
+    "planet": "IX",
+    "size": "medium",
+    "cost": 1191000
+  },
+  {
+    "star": "Epsilon Eridani",
+    "planet": "IX",
+    "size": "extra large",
+    "cost": 487000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "VII",
+    "size": "extra small",
+    "cost": 1178000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "VI",
+    "size": "extra small",
+    "cost": 737000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "VIII",
+    "size": "medium",
+    "cost": 1087000
+  },
+  {
+    "star": "Ross 248",
+    "planet": "IV",
+    "size": "large",
+    "cost": 700000
+  },
+  {
+    "star": "EZ Aquarii",
+    "planet": "IV",
+    "size": "extra small",
+    "cost": 264000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "III",
+    "size": "extra large",
+    "cost": 609000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "X",
+    "size": "extra small",
+    "cost": 479000
+  },
+  {
+    "star": "Lacaille 9352",
+    "planet": "IX",
+    "size": "medium",
+    "cost": 1045000
+  },
+  {
+    "star": "Ross 248",
+    "planet": "X",
+    "size": "extra large",
+    "cost": 180000
+  },
+  {
+    "star": "Sirius A",
+    "planet": "XV",
+    "size": "extra small",
+    "cost": 987000
+  },
+  {
+    "star": "Sirius B",
+    "planet": "V",
+    "size": "extra small",
+    "cost": 386000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "IX",
+    "size": "small",
+    "cost": 304000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "IV",
+    "size": "small",
+    "cost": 695000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "VII",
+    "size": "extra small",
+    "cost": 604000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "VII",
+    "size": "small",
+    "cost": 598000
+  },
+  {
+    "star": "Groombridge",
+    "planet": "XI",
+    "size": "small",
+    "cost": 667000
+  },
+  {
+    "star": "Procyon",
+    "planet": "IV",
+    "size": "medium",
+    "cost": 354000
+  },
+  {
+    "star": "Epsilon Eridani",
+    "planet": "VI",
+    "size": "small",
+    "cost": 1115000
+  },
+  {
+    "star": "Barnard",
+    "planet": "VI",
+    "size": "small",
+    "cost": 77000
+  },
+  {
+    "star": "Kruger",
+    "planet": "I",
+    "size": "extra small",
+    "cost": 639000
+  },
+  {
+    "star": "Alpha Centauri",
+    "planet": "VII",
+    "size": "extra large",
+    "cost": 724000
+  },
+  {
+    "star": "61 Cygni",
+    "planet": "VI",
+    "size": "large",
+    "cost": 1047000
+  },
+  {
+    "star": "Barnard",
+    "planet": "II",
+    "size": "small",
+    "cost": 955000
+  },
+  {
+    "star": "Ross 128",
+    "planet": "IV",
+    "size": "medium",
+    "cost": 997000
+  },
+  {
+    "star": "Lalande",
+    "planet": "VII",
+    "size": "medium",
+    "cost": 425000
+  },
+  {
+    "star": "Procyon",
+    "planet": "I",
+    "size": "medium",
+    "cost": 1055000
+  }
+]
