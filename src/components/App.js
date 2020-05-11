@@ -9,7 +9,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      properties: []
+      properties: [],
+      searchfield: ''
     }
   }
 
@@ -18,11 +19,19 @@ class App extends React.Component {
   }
 
   onSearchChange = (event) => {
-    console.log(event.target.value);
+    this.setState({ searchfield: event.target.value });
   }
 
   render() {
-    const { properties } = this.state;
+    const { properties, searchfield } = this.state;
+
+    const filteredProperties = properties.filter(property => {
+      return (
+        property.star.toLowerCase().includes(searchfield.toLowerCase())
+        || property.planet.toLowerCase().includes(searchfield.toLowerCase())
+        || property.size.toLowerCase().includes(searchfield.toLowerCase())
+      )
+    })
 
     return (
       <React.Fragment>
@@ -31,7 +40,7 @@ class App extends React.Component {
           <SearchField onSearchChange={this.onSearchChange}/>
         </header>
         <main>
-          <PropertySummaryList properties={properties} />
+          <PropertySummaryList properties={filteredProperties} />
         </main>
       </React.Fragment>
     )
