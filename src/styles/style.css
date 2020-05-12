@@ -8,11 +8,12 @@ body {
   background: #202030;
 }
 
-header, main {
-  background-color: #e0d09010;
-  border-radius: 5px;
+header {
   padding: 1rem;
-  margin: 1rem;
+}
+
+main {
+  padding: 1rem 5rem;
 }
 
 h1 {
@@ -21,22 +22,31 @@ h1 {
 }
 
 .summary-card-list {
-  display: grid;
-  grid-template: auto / repeat(4, 1fr);
-  grid-gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .summary-card {
-  background-color: #e0d090;
-  border-radius: 5px;
-  padding: 0.5rem;
-  padding-left: 1rem;
+  margin: 0.5rem 0;
+  background-color: #00000030;
+  border-radius: 3px;
+  border: 1px solid #ffffff30;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-card-child {
+  margin: 0.5rem;
 }
 
 .summary-card-image {
   display: block;
-  margin: 0 auto 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
   max-width: 10rem;
-  height: auto;
+  max-height: 10rem;
+}
+
+.summary-card-description {
+  max-width: 60%;
 }
