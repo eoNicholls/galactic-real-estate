@@ -26,13 +26,17 @@ class App extends React.Component {
     const { properties, searchfield } = this.state;
 
     const filteredProperties = properties.filter(property => {
-      return Object.values(property).reduce((accumulator, currentValue) => {
+      const includesSearchfield = (value) => String(value).toLowerCase().includes(searchfield.toLowerCase());
+      let propertyValues = Object.values(property);
+      let initialValue = includesSearchfield(propertyValues[0]);
 
-        accumulator = String(accumulator).toLowerCase().includes(searchfield.toLowerCase()) || accumulator;
-        currentValue = String(currentValue).toLowerCase().includes(searchfield.toLowerCase());
-        return currentValue || accumulator;
-
-      }) === true ? true : false;
+      return propertyValues.reduce(
+        (accumulator, currentValue) => {
+          currentValue = includesSearchfield(currentValue);
+          return currentValue || accumulator;
+        },
+        initialValue
+      ) === true ? true : false;
     })
 
     return (
