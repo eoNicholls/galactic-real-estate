@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const SearchField = ({ onSearchChange }) => {
+const SearchField = ({ props }) => {
   return <input
     type='text'
     placeholder='Search for keywords'
-    onChange={onSearchChange}
+    onChange={props}
   />
 }
 

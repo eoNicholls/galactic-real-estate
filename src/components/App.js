@@ -26,18 +26,20 @@ class App extends React.Component {
     const { properties, searchfield } = this.state;
 
     const filteredProperties = properties.filter(property => {
-      return (
-        property.star.toLowerCase().includes(searchfield.toLowerCase())
-        || property.planet.toLowerCase().includes(searchfield.toLowerCase())
-        || property.size.toLowerCase().includes(searchfield.toLowerCase())
-      )
+      return Object.values(property).reduce((accumulator, currentValue) => {
+
+        accumulator = String(accumulator).toLowerCase().includes(searchfield.toLowerCase()) || accumulator;
+        currentValue = String(currentValue).toLowerCase().includes(searchfield.toLowerCase());
+        return currentValue || accumulator;
+
+      }) === true ? true : false;
     })
 
     return (
       <React.Fragment>
         <header>
           <h1>Galactic Real Estate Agency</h1>
-          <SearchField onSearchChange={this.onSearchChange}/>
+          <SearchField props={this.onSearchChange}/>
         </header>
         <main>
           <PropertySummaryList properties={filteredProperties} />
