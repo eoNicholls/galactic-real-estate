@@ -6,10 +6,17 @@
 
 body {
   background: #202030;
+  color: white;
 }
 
 header {
   padding: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main {
@@ -19,6 +26,10 @@ main {
 h1 {
   text-align: center;
   color: #e0d090;
+}
+
+input {
+  max-height: 1.5rem;
 }
 
 .property-card-list {
@@ -31,7 +42,6 @@ h1 {
   background-color: #00000030;
   border-radius: 3px;
   border: 1px solid #ffffff30;
-  color: white;
   display: flex;
   justify-content: space-between;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import FilteredPropertyList from './FilteredPropertyList.js';
 import SearchField from './SearchField.js';
+import ValueField from './ValueField.js';
 
 import jsonData from '../assets/data.json';
 
@@ -24,7 +25,10 @@ class App extends React.Component {
       <React.Fragment>
         <header>
           <h1>Galactic Real Estate Agency</h1>
-          <SearchField props={this.onSearchFieldChange}/>
+          <form>
+            <SearchField props={this.onSearchFieldChange}/>
+            <ValueField />
+          </form>
         </header>
         <main>
           <FilteredPropertyList properties={this.PROPERTIES} searchfield={this.state.searchfield} />
