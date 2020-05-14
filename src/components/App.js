@@ -23,10 +23,11 @@ class App extends React.Component {
 
   onPriceFieldChange = (event) => {
     const target = event.target;
+    const value = parseInt(target.value);
     const currentVR = this.state.pricerange;
     this.setState(target.name === 'min'
-                    ? {pricerange: [target.value, currentVR[1]]}
-                    : {pricerange: [currentVR[0], target.value]});
+                    ? {pricerange: [value, currentVR[1]]}
+                    : {pricerange: [currentVR[0], value]});
   }
 
   render() {
