@@ -10,7 +10,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      searchfield: ''
+      searchfield: '',
+      valuerange: [-Infinity, Infinity]
     }
 
     this.PROPERTIES = JSON.parse(JSON.stringify(jsonData));
@@ -20,6 +21,14 @@ class App extends React.Component {
     this.setState({ searchfield: event.target.value });
   }
 
+  onValueFieldChange = (event) => {
+    const target = event.target;
+    const currentVR = this.state.valuerange;
+    this.setState(target.name === 'min'
+                    ? {valuerange: [target.value, currentVR[1]]}
+                    : {valuerange: [currentVR[0], target.value]});
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -27,11 +36,13 @@ class App extends React.Component {
           <h1>Galactic Real Estate Agency</h1>
           <form>
             <SearchField props={this.onSearchFieldChange}/>
-            <ValueField />
+            <ValueField props={this.onValueFieldChange}/>
           </form>
         </header>
         <main>
-          <FilteredPropertyList properties={this.PROPERTIES} searchfield={this.state.searchfield} />
+          <FilteredPropertyList properties={this.PROPERTIES}
+                                searchfield={this.state.searchfield}
+                                valuerange={this.state.valuerange} />
         </main>
       </React.Fragment>
     )
