@@ -1,7 +1,7 @@
 import React from 'react';
 import FilteredPropertyList from './FilteredPropertyList.js';
 import SearchField from './SearchField.js';
-import ValueField from './ValueField.js';
+import PriceRangeField from './PriceRangeField.js';
 
 import jsonData from '../assets/data.json';
 
@@ -11,7 +11,7 @@ class App extends React.Component {
     super();
     this.state = {
       searchfield: '',
-      valuerange: [-Infinity, Infinity]
+      pricerange: [-Infinity, Infinity]
     }
 
     this.PROPERTIES = JSON.parse(JSON.stringify(jsonData));
@@ -21,12 +21,12 @@ class App extends React.Component {
     this.setState({ searchfield: event.target.value });
   }
 
-  onValueFieldChange = (event) => {
+  onPriceFieldChange = (event) => {
     const target = event.target;
-    const currentVR = this.state.valuerange;
+    const currentVR = this.state.pricerange;
     this.setState(target.name === 'min'
-                    ? {valuerange: [target.value, currentVR[1]]}
-                    : {valuerange: [currentVR[0], target.value]});
+                    ? {pricerange: [target.value, currentVR[1]]}
+                    : {pricerange: [currentVR[0], target.value]});
   }
 
   render() {
@@ -36,13 +36,13 @@ class App extends React.Component {
           <h1>Galactic Real Estate Agency</h1>
           <form>
             <SearchField props={this.onSearchFieldChange}/>
-            <ValueField props={this.onValueFieldChange}/>
+            <PriceRangeField props={this.onPriceFieldChange}/>
           </form>
         </header>
         <main>
           <FilteredPropertyList properties={this.PROPERTIES}
                                 searchfield={this.state.searchfield}
-                                valuerange={this.state.valuerange} />
+                                pricerange={this.state.pricerange} />
         </main>
       </React.Fragment>
     )

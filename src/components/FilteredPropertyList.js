@@ -6,15 +6,16 @@ class FilteredPropertyList extends React.Component {
   render() {
     const properties = this.props.properties;
     const searchfield = this.props.searchfield;
+    const pricerange = this.props.pricerange;
 
 
     const filteredProperties = properties.filter(property => {
-      const includesSearchfield = (value) => String(value).toLowerCase().includes(searchfield.toLowerCase());
+      const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchfield.toLowerCase());
       let propertyValues = Object.values(property);
-      let initialValue = includesSearchfield(propertyValues[0]);
+      let initialValue = includesSearchfieldCheck(propertyValues[0]);
 
       const reduceFunction = ((accumulator, currentValue) => {
-        currentValue = includesSearchfield(currentValue);
+        currentValue = includesSearchfieldCheck(currentValue);
         return currentValue || accumulator;
       });
 

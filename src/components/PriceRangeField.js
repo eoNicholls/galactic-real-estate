@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const ValueField = ({props}) => {
+const PriceRangeField = ({props}) => {
   return (
     <div>
-      <p>Value from:</p>
+      <p>Price from:</p>
       <input type='number' name='min' placeholder='Min' onChange={props} />
       <p>to:</p>
       <input type='number' name='max' placeholder='Max' onChange={props} />
@@ -13,4 +13,4 @@ const ValueField = ({props}) => {
 }
 
 
-export default ValueField;
+export default PriceRangeField;
