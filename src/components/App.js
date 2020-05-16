@@ -3,7 +3,7 @@ import FilteredPropertyList from './FilteredPropertyList.js';
 import SearchField from './SearchField.js';
 import PriceRangeField from './PriceRangeField.js';
 
-import jsonData from '../assets/data.json';
+import jsonData from '../assets/planetData.json';
 
 
 class App extends React.Component {
