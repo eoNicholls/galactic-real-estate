@@ -2,6 +2,7 @@ import React from 'react';
 import FilteredPropertyList from './FilteredPropertyList.js';
 import SearchField from './SearchField.js';
 import PriceRangeField from './PriceRangeField.js';
+import ErrorMessageContainer from './ErrorMessageContainer.js';
 
 import jsonData from '../assets/planetData.json';
 
@@ -40,6 +41,11 @@ class App extends React.Component {
             <PriceRangeField props={this.onPriceFieldChange}/>
           </form>
         </header>
+
+        <div>
+          <ErrorMessageContainer props={this.state}/>
+        </div>
+
         <main>
           <FilteredPropertyList properties={this.PROPERTIES}
                                 searchfield={this.state.searchfield}

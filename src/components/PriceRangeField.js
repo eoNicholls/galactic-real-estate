@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const PriceRangeField = ({props}) => {
+const PriceRangeField = ({ props }) => {
 
   // this function changes the number format from iii,iii,iii back to iiiiiiiii
   const fromLocaleString = function(value) {
@@ -36,7 +36,6 @@ const PriceRangeField = ({props}) => {
     props(event);
 
     // changes the value to a more readable format (including commas)
-    console.log(value, isNaN(value));
     if (value === '') {
       target.value = '';
     } else {
