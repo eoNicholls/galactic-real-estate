@@ -1,11 +1,14 @@
 import React from 'react';
 import image from '../assets/placeholder-planet.png';
+import AstraeaCanvas from './AstraeaCanvas.js';
 
 
-const PropertyCard = ({ star, planet, size, cost }) => {
+const PropertyCard = ({ id, star, planet, size, cost }) => {
   return (
     <div className='property-card'>
-      <img alt={`${star} ${planet}`} src={image} className='property-card-image property-card-child' />
+      <div className='property-card-image property-card-child'>
+        <AstraeaCanvas id={id} />
+      </div>
       <p className='property-card-child'>
         {star} {planet}.<br />
         {size}.<br />

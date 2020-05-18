@@ -42,6 +42,7 @@ class FilteredPropertyList extends React.Component {
     const PropertyCardArray = filteredProperties.map((property, i) => {
       return <PropertyCard
         key={filteredProperties[i].id}
+        id={filteredProperties[i].id}
         star={filteredProperties[i].star}
         planet={filteredProperties[i].planet}
         size={filteredProperties[i].size}
