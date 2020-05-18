@@ -47,6 +47,7 @@ class FilteredPropertyList extends React.Component {
         planet={filteredProperties[i].planet}
         size={filteredProperties[i].size}
         cost={filteredProperties[i].cost}
+        animateImage={false}
       />
     });
 

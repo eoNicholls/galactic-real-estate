@@ -3,11 +3,11 @@ import image from '../assets/placeholder-planet.png';
 import AstraeaCanvas from './AstraeaCanvas.js';
 
 
-const PropertyCard = ({ id, star, planet, size, cost }) => {
+const PropertyCard = ({ id, star, planet, size, cost, animateImage}) => {
   return (
     <div className='property-card'>
       <div className='property-card-image property-card-child'>
-        <AstraeaCanvas id={id} />
+        <AstraeaCanvas id={id} animate={animateImage} />
       </div>
       <p className='property-card-child'>
         {star} {planet}.<br />

@@ -3,7 +3,7 @@ import P5Wrapper from 'react-p5-wrapper';
 // import sketch from '../assets/astraea/astraeaFullSketch.js';
 
 
-const AstraeaCanvas = ({ id }) => {
+const AstraeaCanvas = ({ id, animate }) => {
 
   const sketch = (p) => {
 
@@ -25,6 +25,8 @@ const AstraeaCanvas = ({ id }) => {
       // canvas.elt.style.cssText += `width: ${width * scaling}px; height: ${height * scaling}px;`
 
       explore()
+
+      if (!animate) {p.noLoop()}
     }
 
     p.draw = function () {
