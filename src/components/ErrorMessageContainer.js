@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const ErrorMessageContainer = ({ props }) => {
-  if (props.pricerange[0] >= props.pricerange[1]) {
+  if (props.priceRange[0] >= props.priceRange[1]) {
     return (
         <div class='error-message-container'>
           <p class="error-message">

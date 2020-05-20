@@ -1,26 +1,64 @@
 import React from 'react';
 import PropertyCard from './PropertyCard.js';
+import SearchField from './SearchField.js';
+import SortField from './SortField.js';
+import PriceRangeField from './PriceRangeField.js';
+import ErrorMessageContainer from './ErrorMessageContainer.js';
+
 
 
 class FilteredPropertyList extends React.Component {
-  render() {
-    const properties = this.props.properties;
-    const searchfield = this.props.searchfield;
-    const pricerange = this.props.pricerange;
+  constructor(props) {
+    super(props);
+    this.state = {
+      properties: props.properties,
+      searchField: '',
+      priceRange: [-Infinity, Infinity],
+      sortField: 'default'
+    }
+  }
 
+  onSearchFieldChange = (event) => {
+    this.setState({ searchfield: event.target.value });
+  }
+
+  onPriceFieldChange = (event) => {
+    const target = event.target;
+    const value = parseInt(target.value);
+    const currentVR = this.state.priceRange;
+    this.setState(target.name === 'min'
+                    ? {priceRange: [value, currentVR[1]]}
+                    : {priceRange: [currentVR[0], value]});
+  }
+
+
+  onSortFieldChange = (event) => {
+    this.setState({ sortField: event.target.value });
+  }
+
+  compareFunctions = {
+    costAscending: (a, b) => a.props.cost - b.props.cost,
+
+    costDescending: (a, b) => b.props.cost - a.props.cost,
+
+    default: (a, b) => 1
+  }
+
+
+  render() {
+    const {properties, searchField, sortField, priceRange} = this.state;
 
     const filteredProperties = properties.filter(property => {
-
       // check property price is in filtered range
-      if (pricerange[0] < pricerange[1]) {
-        if (!(pricerange[0] <= property.cost) || !(property.cost <= pricerange[1])) {
+      if (priceRange[0] < priceRange[1]) {
+        if (!(priceRange[0] <= property.cost) || !(property.cost <= priceRange[1])) {
           return false
         }
       }
 
       // function to check if a given value contains the search string
       // used to check against each value of the given property
-      const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchfield.toLowerCase());
+      const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchField.toLowerCase());
       let propertyValues = Object.values(property);
       let initialValue = includesSearchfieldCheck(propertyValues[0]);
 
@@ -49,13 +87,24 @@ class FilteredPropertyList extends React.Component {
         cost={filteredProperties[i].cost}
         animateImage={false}
       />
-    });
-
+    }).sort(this.compareFunctions[sortField]);
+    console.log(this.compareFunctions[sortField]);
 
     return (
-      <div className='property-card-list'>
-        {PropertyCardArray}
-      </div>
+      <React.Fragment>
+        <form>
+          <SearchField props={this.onSearchFieldChange} />
+          <SortField onChange={this.onSortFieldChange}
+                    compareFunctions={this.compareFunctions}/>
+          <PriceRangeField props={this.onPriceFieldChange} />
+        </form>
+        <div>
+          <ErrorMessageContainer props={this.state}/>
+        </div>
+        <div className='property-card-list'>
+          {PropertyCardArray}
+        </div>
+      </React.Fragment>
     )
   }
 }
