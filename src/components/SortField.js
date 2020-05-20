@@ -2,11 +2,16 @@ import React from 'react';
 
 
 const SortField = ({ onChange, compareFunctions }) => {
+
+  const options = Object.keys(compareFunctions).map((entry) => {
+    let id = compareFunctions[entry][0];
+    let text = compareFunctions[entry][1];
+    return <option value={id} key={id}>{text}</option>;
+  });
+
   return(
     <select onChange={onChange}>
-      <option value='default'>-</option>
-      <option value='costAscending'>Cost (low to high)</option>
-      <option value='costDescending'>Cost (high to low)</option>
+      {options}
     </select>
   )
 }

@@ -37,11 +37,23 @@ class FilteredPropertyList extends React.Component {
   }
 
   compareFunctions = {
-    costAscending: (a, b) => a.props.cost - b.props.cost,
+    default: [
+      'default',
+      '-',
+      (a, b) => 1
+    ],
 
-    costDescending: (a, b) => b.props.cost - a.props.cost,
+    costAscending: [
+      'costAscending',
+      'Cost (low to high)',
+      (a, b) => a.props.cost - b.props.cost
+    ],
 
-    default: (a, b) => 1
+    costDescending: [
+      'costDescending',
+      'Cost (high to low)',
+      (a, b) => b.props.cost - a.props.cost
+    ]
   }
 
 
@@ -87,8 +99,7 @@ class FilteredPropertyList extends React.Component {
         cost={filteredProperties[i].cost}
         animateImage={false}
       />
-    }).sort(this.compareFunctions[sortField]);
-    console.log(this.compareFunctions[sortField]);
+    }).sort(this.compareFunctions[sortField][2]);
 
     return (
       <React.Fragment>
