@@ -43,16 +43,16 @@ class FilteredPropertyList extends React.Component {
       (a, b) => 1
     ],
 
-    costAscending: [
-      'costAscending',
-      'Cost (low to high)',
-      (a, b) => a.props.cost - b.props.cost
+    priceAscending: [
+      'priceAscending',
+      'price (low to high)',
+      (a, b) => a.props.price - b.props.price
     ],
 
-    costDescending: [
-      'costDescending',
-      'Cost (high to low)',
-      (a, b) => b.props.cost - a.props.cost
+    priceDescending: [
+      'priceDescending',
+      'price (high to low)',
+      (a, b) => b.props.price - a.props.price
     ]
   }
 
@@ -63,7 +63,7 @@ class FilteredPropertyList extends React.Component {
     const filteredProperties = properties.filter(property => {
       // check property price is in filtered range
       if (priceRange[0] < priceRange[1]) {
-        if (!(priceRange[0] <= property.cost) || !(property.cost <= priceRange[1])) {
+        if (!(priceRange[0] <= property.price) || !(property.price <= priceRange[1])) {
           return false
         }
       }
@@ -96,7 +96,7 @@ class FilteredPropertyList extends React.Component {
         star={filteredProperties[i].star}
         planet={filteredProperties[i].planet}
         size={filteredProperties[i].size}
-        cost={filteredProperties[i].cost}
+        price={filteredProperties[i].price}
         animateImage={false}
       />
     }).sort(this.compareFunctions[sortField][2]);

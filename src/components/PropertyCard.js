@@ -11,13 +11,13 @@ class PropertyCard extends React.Component {
       star: props.star,
       planet: props.planet,
       size: props.size,
-      cost: props.cost,
+      price: props.price,
       animateImage: props.animateImage
     }
   }
 
   render() {
-    const { id, star, planet, size, cost, animateImage } = this.state;
+    const { id, star, planet, size, price, animateImage } = this.state;
 
     return (
       <div className='property-card'>
@@ -27,7 +27,7 @@ class PropertyCard extends React.Component {
         <p className='property-card-child'>
           {star} {planet}.<br />
           {size}.<br />
-          £{cost}
+          £{price}
         </p>
         <p className='property-card-child property-card-description'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
