@@ -46,9 +46,9 @@ const PriceRangeField = ({ props }) => {
 
   return (
     <div>
-      <p>Price from:</p>
+      <label>Price from:</label>
       <input name='min' placeholder='Min' step='1000' onChange={onChangeEvent} />
-      <p>to:</p>
+      <label>to:</label>
       <input name='max' placeholder='Max' step='1000' onChange={onChangeEvent} />
     </div>
   )

@@ -10,9 +10,12 @@ const SortField = ({ onChange, compareFunctions }) => {
   });
 
   return(
-    <select onChange={onChange}>
-      {options}
-    </select>
+    <div>
+      <label>Sort properties by:</label>
+      <select onChange={onChange}>
+        {options}
+      </select>
+    </div>
   )
 }
 
