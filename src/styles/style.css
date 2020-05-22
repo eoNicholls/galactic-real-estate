@@ -76,6 +76,22 @@ input {
   color: red;
 }
 
-/* .pagination {
+.pagination {
   display: flex;
-} */
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination > li {
+  padding: 0 0.5rem;
+}
+
+.pagination > li:hover {
+  cursor: pointer;
+}
+
+.pagination > .active {
+  border: 1px solid white;
+  border-radius: 3px;
+}

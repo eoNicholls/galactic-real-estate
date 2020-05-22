@@ -119,6 +119,20 @@ class FilteredPropertyList extends React.Component {
     let pageCount = Math.ceil(PropertyCardArray.length / cardsPerPage);
     let pageStartIndex = currentPage * cardsPerPage;
     PropertyCardArray = PropertyCardArray.splice(pageStartIndex, cardsPerPage);
+    let Pagination = <ReactPaginate
+      previousLabel={'previous'}
+      nextLabel={'next'}
+      breakLabel={'...'}
+      breakClassName={'break-me'}
+      pageCount={pageCount}
+      marginPagesDisplayed={1}
+      pageRangeDisplayed={5}
+      onPageChange={this.handlePageClick}
+      containerClassName={'pagination'}
+      subContainerClassName={'pages pagination'}
+      activeClassName={'active'}
+      forcePage={this.state.currentPage}
+    />
 
 
     return (
@@ -129,25 +143,18 @@ class FilteredPropertyList extends React.Component {
                     compareFunctions={this.compareFunctions}/>
           <PriceRangeField props={this.onPriceFieldChange} />
         </form>
+
         <div>
           <ErrorMessageContainer props={this.state}/>
         </div>
-        <ReactPaginate
-          previousLabel={'previous'}
-          nextLabel={'next'}
-          breakLabel={'...'}
-          breakClassName={'break-me'}
-          pageCount={pageCount}
-          marginPagesDisplayed={1}
-          pageRangeDisplayed={5}
-          onPageChange={this.handlePageClick}
-          containerClassName={'pagination'}
-          subContainerClassName={'pages pagination'}
-          activeClassName={'active'}
-        />
+
+        {Pagination}
+
         <div className='property-card-list'>
           {PropertyCardArray}
         </div>
+
+        {Pagination}
       </React.Fragment>
     )
   }
