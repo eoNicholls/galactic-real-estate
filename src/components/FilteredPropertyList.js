@@ -4,6 +4,7 @@ import SearchField from './SearchField.js';
 import SortField from './SortField.js';
 import PriceRangeField from './PriceRangeField.js';
 import ErrorMessageContainer from './ErrorMessageContainer.js';
+import ReactPaginate from 'react-paginate';
 
 
 
@@ -14,12 +15,18 @@ class FilteredPropertyList extends React.Component {
       properties: props.properties,
       searchField: '',
       priceRange: [-Infinity, Infinity],
-      sortField: 'default'
+      sortField: 'default',
+      cardsPerPage: 10,
+      currentPage: 0
     }
   }
 
+  static getDerivedStateFromProps(props, state) {
+    return { pageCount: Math.ceil(props.properties.length / state.cardsPerPage) };
+  }
+
   onSearchFieldChange = (event) => {
-    this.setState({ searchfield: event.target.value });
+    this.setState({ searchField: event.target.value });
   }
 
   onPriceFieldChange = (event) => {
@@ -57,8 +64,13 @@ class FilteredPropertyList extends React.Component {
   }
 
 
+  handlePageClick = (page) => {
+    this.setState({ currentPage: page.selected });
+  }
+
+
   render() {
-    const {properties, searchField, sortField, priceRange} = this.state;
+    const {properties, searchField, sortField, priceRange, cardsPerPage, currentPage} = this.state;
 
     const filteredProperties = properties.filter(property => {
       // check property price is in filtered range
@@ -88,8 +100,7 @@ class FilteredPropertyList extends React.Component {
       ) === true ? true : false;
     })
 
-
-    const PropertyCardArray = filteredProperties.map((property, i) => {
+    let PropertyCardArray = filteredProperties.map((property, i) => {
       return <PropertyCard
         key={filteredProperties[i].id}
         id={filteredProperties[i].id}
@@ -99,7 +110,16 @@ class FilteredPropertyList extends React.Component {
         price={filteredProperties[i].price}
         animateImage={false}
       />
-    }).sort(this.compareFunctions[sortField][2]);
+    });
+
+    // sorting
+    PropertyCardArray.sort(this.compareFunctions[sortField][2]);
+
+    // pagination
+    let pageCount = Math.ceil(PropertyCardArray.length / cardsPerPage);
+    let pageStartIndex = currentPage * cardsPerPage;
+    PropertyCardArray = PropertyCardArray.splice(pageStartIndex, cardsPerPage);
+
 
     return (
       <React.Fragment>
@@ -112,6 +132,19 @@ class FilteredPropertyList extends React.Component {
         <div>
           <ErrorMessageContainer props={this.state}/>
         </div>
+        <ReactPaginate
+          previousLabel={'previous'}
+          nextLabel={'next'}
+          breakLabel={'...'}
+          breakClassName={'break-me'}
+          pageCount={pageCount}
+          marginPagesDisplayed={1}
+          pageRangeDisplayed={5}
+          onPageChange={this.handlePageClick}
+          containerClassName={'pagination'}
+          subContainerClassName={'pages pagination'}
+          activeClassName={'active'}
+        />
         <div className='property-card-list'>
           {PropertyCardArray}
         </div>
