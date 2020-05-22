@@ -19,28 +19,31 @@ class FilteredPropertyList extends React.Component {
       cardsPerPage: 10,
       currentPage: 0
     }
-  }
 
-  static getDerivedStateFromProps(props, state) {
-    return { pageCount: Math.ceil(props.properties.length / state.cardsPerPage) };
+    this.buffer = {
+      searchField: '',
+      priceRange: [-Infinity, Infinity],
+      sortField: 'default'
+    }
   }
 
   onSearchFieldChange = (event) => {
-    this.setState({ searchField: event.target.value });
+    this.buffer.searchField = event.target.value;
   }
 
   onPriceFieldChange = (event) => {
     const target = event.target;
     const value = parseInt(target.value);
-    const currentVR = this.state.priceRange;
-    this.setState(target.name === 'min'
-                    ? {priceRange: [value, currentVR[1]]}
-                    : {priceRange: [currentVR[0], value]});
+    const currentVR = this.buffer.priceRange;
+    this.buffer.priceRange = (target.name === 'min')
+                    ? [value, currentVR[1]]
+                    : [currentVR[0], value];
+    console.log(this.buffer.priceRange);
   }
 
 
   onSortFieldChange = (event) => {
-    this.setState({ sortField: event.target.value });
+    this.buffer.sortField = event.target.value;
   }
 
   compareFunctions = {
@@ -63,8 +66,16 @@ class FilteredPropertyList extends React.Component {
     ]
   }
 
+  onUpdateResultsClick = () => {
+    this.setState({
+      searchField: this.buffer.searchField,
+      priceRange: this.buffer.priceRange,
+      sortField: this.buffer.sortField
+    });
+  }
 
-  handlePageClick = (page) => {
+
+  onPaginationClick = (page) => {
     this.setState({ currentPage: page.selected });
   }
 
@@ -108,7 +119,7 @@ class FilteredPropertyList extends React.Component {
         planet={filteredProperties[i].planet}
         size={filteredProperties[i].size}
         price={filteredProperties[i].price}
-        animateImage={false}
+        animateImage={true}
       />
     });
 
@@ -127,7 +138,7 @@ class FilteredPropertyList extends React.Component {
       pageCount={pageCount}
       marginPagesDisplayed={1}
       pageRangeDisplayed={5}
-      onPageChange={this.handlePageClick}
+      onPageChange={this.onPaginationClick}
       containerClassName={'pagination'}
       subContainerClassName={'pages pagination'}
       activeClassName={'active'}
@@ -142,6 +153,11 @@ class FilteredPropertyList extends React.Component {
           <SortField onChange={this.onSortFieldChange}
                     compareFunctions={this.compareFunctions}/>
           <PriceRangeField props={this.onPriceFieldChange} />
+          <input
+            type='button'
+            name='updateResults'
+            value='Update Results'
+            onClick ={this.onUpdateResultsClick} />
         </form>
 
         <div>

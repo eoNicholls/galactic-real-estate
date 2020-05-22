@@ -22,7 +22,7 @@ class PropertyCard extends React.Component {
     return (
       <div className='property-card'>
         <div className='property-card-image property-card-child'>
-          {/*<AstraeaCanvas id={id} animate={animateImage} />*/}
+          <AstraeaCanvas id={id} animate={animateImage} />
         </div>
         <p className='property-card-child'>
           {star} {planet}.<br />
