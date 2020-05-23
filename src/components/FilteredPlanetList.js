@@ -1,5 +1,5 @@
 import React from 'react';
-import PropertyCard from './PropertyCard.js';
+import PlanetCard from './PlanetCard.js';
 import SearchField from './SearchField.js';
 import SortField from './SortField.js';
 import PriceRangeField from './PriceRangeField.js';
@@ -8,11 +8,11 @@ import ReactPaginate from 'react-paginate';
 
 
 
-class FilteredPropertyList extends React.Component {
+class FilteredPlanetList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      properties: props.properties,
+      planets: props.planets,
       searchField: '',
       priceRange: [-Infinity, Infinity],
       sortField: 'default',
@@ -38,7 +38,6 @@ class FilteredPropertyList extends React.Component {
     this.buffer.priceRange = (target.name === 'min')
                     ? [value, currentVR[1]]
                     : [currentVR[0], value];
-    console.log(this.buffer.priceRange);
   }
 
 
@@ -56,13 +55,13 @@ class FilteredPropertyList extends React.Component {
     priceAscending: [
       'priceAscending',
       'price (low to high)',
-      (a, b) => a.props.price - b.props.price
+      (a, b) => a.props.props.price - b.props.props.price
     ],
 
     priceDescending: [
       'priceDescending',
       'price (high to low)',
-      (a, b) => b.props.price - a.props.price
+      (a, b) => b.props.props.price - a.props.props.price
     ]
   }
 
@@ -81,51 +80,51 @@ class FilteredPropertyList extends React.Component {
 
 
   render() {
-    const {properties, searchField, sortField, priceRange, cardsPerPage, currentPage} = this.state;
+    const {planets, searchField, sortField, priceRange, cardsPerPage, currentPage} = this.state;
 
-    const filteredProperties = properties.filter(property => {
-      // check property price is in filtered range
+    const filteredPlanets = planets.filter(planet => {
+      // check planet price is in filtered range
       if (priceRange[0] < priceRange[1]) {
-        if (!(priceRange[0] <= property.price) || !(property.price <= priceRange[1])) {
+        if (!(priceRange[0] <= planet.price) || !(planet.price <= priceRange[1])) {
           return false
         }
       }
 
       // function to check if a given value contains the search string
-      // used to check against each value of the given property
+      // used to check against each value of the given planet
       const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchField.toLowerCase());
-      let propertyValues = Object.values(property);
-      let initialValue = includesSearchfieldCheck(propertyValues[0]);
+      let planetValues = Object.values(planet);
+      let initialValue = includesSearchfieldCheck(planetValues[0]);
 
-      // function to reduce a property to a boolean value depending on whether it contains the search string or not
+      // function to reduce a planet to a boolean value depending on whether it contains the search string or not
       const reduceFunction = ((accumulator, currentValue) => {
         currentValue = includesSearchfieldCheck(currentValue);
         return currentValue || accumulator;
       });
 
       // reduce function is called here
-      // initialValue is used to check against the first value in the property
-      return propertyValues.reduce(
+      // initialValue is used to check against the first value in the planet
+      return planetValues.reduce(
         reduceFunction,
         initialValue
       ) === true ? true : false;
     })
 
-    let PropertyCardArray = filteredProperties.map((property, i) => {
-      filteredProperties[i].animateImage = true;
-      return <PropertyCard
-        key={filteredProperties[i].id}
-        props={filteredProperties[i]}
+    let PlanetCardArray = filteredPlanets.map((planet, i) => {
+      filteredPlanets[i].animateImage = true;
+      return <PlanetCard
+        key={filteredPlanets[i].id}
+        props={filteredPlanets[i]}
       />
     });
 
     // sorting
-    PropertyCardArray.sort(this.compareFunctions[sortField][2]);
+    PlanetCardArray.sort(this.compareFunctions[sortField][2]);
 
     // pagination
-    let pageCount = Math.ceil(PropertyCardArray.length / cardsPerPage);
+    let pageCount = Math.ceil(PlanetCardArray.length / cardsPerPage);
     let pageStartIndex = currentPage * cardsPerPage;
-    PropertyCardArray = PropertyCardArray.splice(pageStartIndex, cardsPerPage);
+    PlanetCardArray = PlanetCardArray.splice(pageStartIndex, cardsPerPage);
     let Pagination = <ReactPaginate
       previousLabel={'previous'}
       nextLabel={'next'}
@@ -162,8 +161,8 @@ class FilteredPropertyList extends React.Component {
 
         {Pagination}
 
-        <div className='property-card-list'>
-          {PropertyCardArray}
+        <div className='planet-card-list'>
+          {PlanetCardArray}
         </div>
 
         {Pagination}
@@ -173,4 +172,4 @@ class FilteredPropertyList extends React.Component {
 }
 
 
-export default FilteredPropertyList;
+export default FilteredPlanetList;

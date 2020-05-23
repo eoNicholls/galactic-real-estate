@@ -2,7 +2,7 @@ import React from 'react';
 import AstraeaCanvas from './AstraeaCanvas.js';
 
 
-class PropertyCard extends React.Component {
+class PlanetCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,11 +41,11 @@ class PropertyCard extends React.Component {
     } = this.state;
 
     return (
-      <div className='property-card'>
-        <div className='astraea-canvas-container property-card-child'>
+      <div className='planet-card'>
+        <div className='astraea-canvas-container planet-card-child'>
           <AstraeaCanvas id={id} animate={animateImage} />
         </div>
-        <p className='property-card-child'>
+        <p className='planet-card-child'>
           <span className='planet-name'>{star} {planet}.</span><br />
           Diameter: {diameter}km.<br />
           Average Temperature: {averageTemperature}&deg;C<br />
@@ -58,7 +58,7 @@ class PropertyCard extends React.Component {
           <br />
           £{price}
         </p>
-        <p className='property-card-child property-card-description'>
+        <p className='planet-card-child planet-card-description'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -74,4 +74,4 @@ class PropertyCard extends React.Component {
 }
 
 
-export default PropertyCard;
+export default PlanetCard;

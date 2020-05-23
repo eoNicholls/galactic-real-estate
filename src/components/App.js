@@ -1,12 +1,12 @@
 import React from 'react';
-import FilteredPropertyList from './FilteredPropertyList.js';
+import FilteredPlanetList from './FilteredPlanetList.js';
 import jsonData from '../assets/planetData.json';
 
 
 class App extends React.Component {
   constructor() {
     super();
-    this.PROPERTIES = JSON.parse(JSON.stringify(jsonData));
+    this.PLANETS = JSON.parse(JSON.stringify(jsonData));
   }
 
   render() {
@@ -16,7 +16,7 @@ class App extends React.Component {
           <h1>Galactic Real Estate Agency</h1>
         </header>
         <main>
-          <FilteredPropertyList properties={this.PROPERTIES}/>
+          <FilteredPlanetList planets={this.PLANETS}/>
         </main>
       </React.Fragment>
     )
