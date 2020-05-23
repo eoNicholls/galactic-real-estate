@@ -6,7 +6,7 @@
 
 body {
   background: #202030;
-  color: white;
+  color: #cccccc;
 }
 
 header {
@@ -31,6 +31,9 @@ main {
 h1 {
   text-align: center;
   color: #e0d090;
+  letter-spacing: +0.2em;
+  font-weight: lighter;
+  font-size: 3rem;
 }
 
 input {
@@ -61,7 +64,7 @@ input {
 }
 
 .planet-card .planet-name {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   letter-spacing: +0.2em;
   grid-area: planet-name;
 }
