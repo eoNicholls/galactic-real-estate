@@ -1,86 +1,35 @@
 import React from 'react';
 import PlanetCard from './PlanetCard.js';
-import SearchField from './SearchField.js';
-import SortField from './SortField.js';
-import PriceRangeField from './PriceRangeField.js';
-import ErrorMessageContainer from './ErrorMessageContainer.js';
 import ReactPaginate from 'react-paginate';
-
 
 
 class FilteredPlanetList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      planets: props.planets,
-      searchField: '',
-      priceRange: [-Infinity, Infinity],
-      sortField: 'default',
       cardsPerPage: 10,
-      currentPage: 0
-    }
-
-    this.buffer = {
-      searchField: '',
-      priceRange: [-Infinity, Infinity],
-      sortField: 'default'
+      currentPage: 0,
+      planets: props.planets,
+      searchField: props.searchField,
+      priceRange: props.priceRange,
+      sortMethod: props.sortMethod
     }
   }
 
-  onSearchFieldChange = (event) => {
-    this.buffer.searchField = event.target.value;
+  static getDerivedStateFromProps(props, state) {
+    return {
+      searchField: props.searchField,
+      priceRange: props.priceRange,
+      sortMethod: props.sortMethod
+    };
   }
-
-  onPriceFieldChange = (event) => {
-    const target = event.target;
-    const value = parseInt(target.value);
-    const currentVR = this.buffer.priceRange;
-    this.buffer.priceRange = (target.name === 'min')
-                    ? [value, currentVR[1]]
-                    : [currentVR[0], value];
-  }
-
-
-  onSortFieldChange = (event) => {
-    this.buffer.sortField = event.target.value;
-  }
-
-  compareFunctions = {
-    default: [
-      'default',
-      '-',
-      (a, b) => 1
-    ],
-
-    priceAscending: [
-      'priceAscending',
-      'price (low to high)',
-      (a, b) => a.props.props.price - b.props.props.price
-    ],
-
-    priceDescending: [
-      'priceDescending',
-      'price (high to low)',
-      (a, b) => b.props.props.price - a.props.props.price
-    ]
-  }
-
-  onUpdateResultsClick = () => {
-    this.setState({
-      searchField: this.buffer.searchField,
-      priceRange: this.buffer.priceRange,
-      sortField: this.buffer.sortField
-    });
-  }
-
 
   onPaginationClick = (page) => {
     this.setState({ currentPage: page.selected });
   }
 
-
   render() {
-    const {planets, searchField, sortField, priceRange, cardsPerPage, currentPage} = this.state;
+    const {planets, cardsPerPage, currentPage, searchField, sortMethod, priceRange} = this.state;
 
     const filteredPlanets = planets.filter(planet => {
       // check planet price is in filtered range
@@ -119,12 +68,13 @@ class FilteredPlanetList extends React.Component {
     });
 
     // sorting
-    PlanetCardArray.sort(this.compareFunctions[sortField][2]);
+    PlanetCardArray.sort(sortMethod);
 
     // pagination
     let pageCount = Math.ceil(PlanetCardArray.length / cardsPerPage);
     let pageStartIndex = currentPage * cardsPerPage;
     PlanetCardArray = PlanetCardArray.splice(pageStartIndex, cardsPerPage);
+
     let Pagination = <ReactPaginate
       previousLabel={'previous'}
       nextLabel={'next'}
@@ -143,22 +93,6 @@ class FilteredPlanetList extends React.Component {
 
     return (
       <React.Fragment>
-        <form>
-          <SearchField props={this.onSearchFieldChange} />
-          <SortField onChange={this.onSortFieldChange}
-                    compareFunctions={this.compareFunctions}/>
-          <PriceRangeField props={this.onPriceFieldChange} />
-          <input
-            type='button'
-            name='updateResults'
-            value='Update Results'
-            onClick ={this.onUpdateResultsClick} />
-        </form>
-
-        <div>
-          <ErrorMessageContainer props={this.state}/>
-        </div>
-
         {Pagination}
 
         <div className='planet-card-list'>

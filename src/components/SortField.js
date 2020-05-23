@@ -2,13 +2,13 @@ import React from 'react';
 import DropdownSelector from './DropdownSelector.js';
 
 
-const SortField = ({ onChange, compareFunctions }) => {
+const SortField = ({ onChange, sortMethods }) => {
 
   const label = "Sort planets by:"
 
-  const options = Object.keys(compareFunctions).map((entry) => {
-    let id = compareFunctions[entry][0];
-    let text = compareFunctions[entry][1];
+  const options = Object.keys(sortMethods).map((entry) => {
+    let id = sortMethods[entry][0];
+    let text = sortMethods[entry][1];
     return <option value={id} key={id}>{text}</option>;
   });
 

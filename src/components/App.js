@@ -1,5 +1,6 @@
 import React from 'react';
 import FilteredPlanetList from './FilteredPlanetList.js';
+import FilterContainer from './FilterContainer.js';
 import jsonData from '../assets/planetData.json';
 
 
@@ -16,7 +17,7 @@ class App extends React.Component {
           <h1>Galactic Real Estate Agency</h1>
         </header>
         <main>
-          <FilteredPlanetList planets={this.PLANETS}/>
+          <FilterContainer objects={this.PLANETS}/>
         </main>
       </React.Fragment>
     )
