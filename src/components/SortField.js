@@ -1,7 +1,10 @@
 import React from 'react';
+import DropdownSelector from './DropdownSelector.js';
 
 
 const SortField = ({ onChange, compareFunctions }) => {
+
+  const label = "Sort properties by:"
 
   const options = Object.keys(compareFunctions).map((entry) => {
     let id = compareFunctions[entry][0];
@@ -10,12 +13,12 @@ const SortField = ({ onChange, compareFunctions }) => {
   });
 
   return(
-    <div>
-      <label>Sort properties by:</label>
-      <select onChange={onChange}>
-        {options}
-      </select>
-    </div>
+    <React.Fragment>
+      <DropdownSelector
+        onChange={onChange}
+        label={label}
+        options={options} />
+    </React.Fragment>
   )
 }
 
