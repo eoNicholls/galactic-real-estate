@@ -1,6 +1,5 @@
 import React from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-// import sketch from '../assets/astraea/astraeaFullSketch.js';
 
 
 const AstraeaCanvas = ({ id, animate }) => {
@@ -17,7 +16,7 @@ const AstraeaCanvas = ({ id, animate }) => {
       // const pw = 192
       // const ph = 144
       const pw = 150
-      const ph = 150
+      const ph = 130
       const minScale = 2
       // 最低倍率をminScale倍として、スクロールしないで画面に収まる最大倍率
       const scaling = Math.floor(Math.max(Math.min(p.windowWidth / pw, (p.windowHeight - documentHeight) / ph), minScale))
@@ -84,7 +83,8 @@ const AstraeaCanvas = ({ id, animate }) => {
     }
 
     function generate() {
-      const size = Math.max(rng.randint(32, 64), rng.randint(32, 64))
+      // const size = Math.max(rng.randint(32, 64), rng.randint(32, 64))
+      const size = 60;
 
       palette = new Palette(
         weightedChoice(
