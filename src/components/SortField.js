@@ -4,7 +4,7 @@ import DropdownSelector from './DropdownSelector.js';
 
 const SortField = ({ onChange, compareFunctions }) => {
 
-  const label = "Sort properties by:"
+  const label = "Sort planets by:"
 
   const options = Object.keys(compareFunctions).map((entry) => {
     let id = compareFunctions[entry][0];
