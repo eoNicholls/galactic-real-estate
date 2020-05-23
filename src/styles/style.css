@@ -55,11 +55,17 @@ input {
   margin: 0.5rem;
 }
 
-.property-card-image {
+.property-card .planet-name {
+  font-size: 1.2em;
+  letter-spacing: +0.1em;
+}
+
+.astraea-canvas-container {
   display: block;
   border-radius: 10px;
   max-width: 10rem;
   max-height: 10rem;
+  min-width: 192px;
 }
 
 .property-card-description {

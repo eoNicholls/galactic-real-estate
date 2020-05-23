@@ -112,14 +112,10 @@ class FilteredPropertyList extends React.Component {
     })
 
     let PropertyCardArray = filteredProperties.map((property, i) => {
+      filteredProperties[i].animateImage = true;
       return <PropertyCard
         key={filteredProperties[i].id}
-        id={filteredProperties[i].id}
-        star={filteredProperties[i].star}
-        planet={filteredProperties[i].planet}
-        size={filteredProperties[i].size}
-        price={filteredProperties[i].price}
-        animateImage={true}
+        props={filteredProperties[i]}
       />
     });
 

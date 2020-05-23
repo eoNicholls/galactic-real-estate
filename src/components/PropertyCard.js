@@ -1,5 +1,4 @@
 import React from 'react';
-// import image from '../assets/placeholder-planet.png';
 import AstraeaCanvas from './AstraeaCanvas.js';
 
 
@@ -7,26 +6,56 @@ class PropertyCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: props.id,
-      star: props.star,
-      planet: props.planet,
-      size: props.size,
-      price: props.price,
-      animateImage: props.animateImage
+      animateImage: props.props.animateImage,
+      id: props.props.id,
+      star: props.props.star,
+      planet: props.props.planet,
+      price: props.props.price,
+      diameter: props.props.diameter,
+      averageTemperature: props.props.averageTemperature,
+      orbitalPeriod: props.props.orbitalPeriod,
+      dayLength: props.props.dayLength,
+      composition: props.props.composition,
+      atmosphere: props.props.atmosphere,
+      water: props.props.water,
+      life: props.props.life
     }
   }
 
   render() {
-    const { id, star, planet, size, price, animateImage } = this.state;
+    const {
+      animateImage,
+      id,
+      star,
+      planet,
+      size,
+      price,
+      diameter,
+      averageTemperature,
+      orbitalPeriod,
+      dayLength,
+      composition,
+      atmosphere,
+      water,
+      life
+    } = this.state;
 
     return (
       <div className='property-card'>
-        <div className='property-card-image property-card-child'>
+        <div className='astraea-canvas-container property-card-child'>
           <AstraeaCanvas id={id} animate={animateImage} />
         </div>
         <p className='property-card-child'>
-          {star} {planet}.<br />
-          {size}.<br />
+          <span className='planet-name'>{star} {planet}.</span><br />
+          Diameter: {diameter}km.<br />
+          Average Temperature: {averageTemperature}&deg;C<br />
+          Orbital Period: {orbitalPeriod} Earth-years.<br />
+          Day Length: {dayLength} Earth-days.<br />
+          Composition: {composition}.<br />
+          Atmosphere: {atmosphere}.<br />
+          Water: {water}.<br />
+          Life: {life}.<br />
+          <br />
           £{price}
         </p>
         <p className='property-card-child property-card-description'>
