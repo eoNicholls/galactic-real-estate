@@ -47,8 +47,13 @@ input {
   background-color: #00000030;
   border-radius: 3px;
   border: 1px solid #ffffff30;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'planet-attributes planet-name'
+    'planet-attributes planet-description'
+    'planet-attributes planet-image';
 }
 
 .planet-card-child {
@@ -56,20 +61,28 @@ input {
 }
 
 .planet-card .planet-name {
-  font-size: 1.2em;
-  letter-spacing: +0.1em;
+  font-size: 1.4em;
+  letter-spacing: +0.2em;
+  grid-area: planet-name;
 }
 
-.astraea-canvas-container {
+.planet-card .planet-attributes {
+  padding-right: 0.5rem;
+  border-right: 1px solid #ffffff30;
+  grid-area: planet-attributes;
+}
+
+.planet-card .planet-description {
+  grid-area: planet-description;
+}
+
+.planet-card .astraea-canvas-container {
   display: block;
   border-radius: 10px;
   max-width: 10rem;
   max-height: 10rem;
   min-width: 192px;
-}
-
-.planet-card-description {
-  max-width: 60%;
+  grid-area: planet-image;
 }
 
 .error-message-container {

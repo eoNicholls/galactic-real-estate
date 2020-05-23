@@ -42,23 +42,22 @@ class PlanetCard extends React.Component {
 
     return (
       <div className='planet-card'>
-        <div className='astraea-canvas-container planet-card-child'>
-          <AstraeaCanvas id={id} animate={animateImage} />
-        </div>
-        <p className='planet-card-child'>
-          <span className='planet-name'>{star} {planet}.</span><br />
-          Diameter: {diameter}km.<br />
+        <p className='planet-card-child planet-name'>{star} {planet}.</p>
+
+        <p className='planet-card-child planet-attributes'>
+          Diameter: {diameter}km<br />
           Average Temperature: {averageTemperature}&deg;C<br />
-          Orbital Period: {orbitalPeriod} Earth-years.<br />
-          Day Length: {dayLength} Earth-days.<br />
-          Composition: {composition}.<br />
-          Atmosphere: {atmosphere}.<br />
-          Water: {water}.<br />
-          Life: {life}.<br />
+          Orbital Period: {orbitalPeriod} Earth-years<br />
+          Day Length: {dayLength} Earth-days<br />
+          Composition: {composition}<br />
+          Atmosphere: {atmosphere}<br />
+          Water: {water}<br />
+          Life: {life}<br />
           <br />
           £{price}
         </p>
-        <p className='planet-card-child planet-card-description'>
+
+        <p className='planet-card-child planet-description'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -68,6 +67,10 @@ class PlanetCard extends React.Component {
           occaecat cupidatat non proident, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </p>
+
+        <div className=' planet-card-child astraea-canvas-container'>
+          <AstraeaCanvas id={id} animate={animateImage} />
+        </div>
       </div>
     )
   }
