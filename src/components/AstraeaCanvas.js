@@ -14,8 +14,10 @@ const AstraeaCanvas = ({ id, animate }) => {
     const documentHeight = Array.from(document.getElementsByTagName("section")).reduce((h, v) => h + v.clientHeight, 0)
 
     p.setup = function () {
-      const pw = 192
-      const ph = 144
+      // const pw = 192
+      // const ph = 144
+      const pw = 150
+      const ph = 150
       const minScale = 2
       // 最低倍率をminScale倍として、スクロールしないで画面に収まる最大倍率
       const scaling = Math.floor(Math.max(Math.min(p.windowWidth / pw, (p.windowHeight - documentHeight) / ph), minScale))
@@ -30,12 +32,13 @@ const AstraeaCanvas = ({ id, animate }) => {
     }
 
     p.draw = function () {
-      p.background(palette.background)
+      // p.background(palette.background)
+      p.background('rgb(26, 26, 39)');
       p.loadPixels()
       {
-        for (let star of stars) {
-          pSet(...star)
-        }
+        // for (let star of stars) {
+        //   pSet(...star)
+        // }
 
         for (let i = satellites.length - 1; i >= 0; i--) {
           satellites[i].draw(Properties.Draw.Back)
