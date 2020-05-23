@@ -15,8 +15,6 @@ class FilterContainer extends React.Component {
       priceRange: [-Infinity, Infinity],
       sortMethod: (a, b) => 1
     }
-
-    this.planets = props.objects;
   }
 
   buffer = {

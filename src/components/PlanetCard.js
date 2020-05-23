@@ -28,7 +28,6 @@ class PlanetCard extends React.Component {
       id,
       star,
       planet,
-      size,
       price,
       diameter,
       averageTemperature,
