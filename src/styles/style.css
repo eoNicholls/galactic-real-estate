@@ -152,3 +152,36 @@ input {
   color: var(--highlight-color);
   font-size: 20px;
 }
+
+table {
+  /* height: 100%; */
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+}
+
+td > p {
+  margin: 2px 0;
+  padding: 0 5px;
+  /* line-height: 1rem; */
+}
+
+/* .planet-attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.planet-attributes ul {
+  list-style: none;
+}
+
+.attributes-list {
+  grid-column-start: 1;
+}
+
+.values-list {
+  grid-column-start: 2;
+} */

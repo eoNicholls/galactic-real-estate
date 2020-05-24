@@ -50,13 +50,81 @@ class PlanetCard extends React.Component {
       starred
     } = this.state;
 
+    const planetAttributeData = [
+      [
+        'Diameter',
+        diameter,
+        'km'
+      ],
+      [
+        'Average Temperature',
+        averageTemperature,
+        String.fromCharCode(176)+'C'
+      ],
+      [
+        'Orbital Period',
+        orbitalPeriod,
+        'Earth-years'
+      ],
+      [
+        'Day Length',
+        dayLength,
+        'Earth-days'
+      ],
+      [
+        'Composition',
+        composition,
+        ''
+      ],
+      [
+        'Atmosphere',
+        atmosphere,
+        ''
+      ],
+      [
+        'Water',
+        water,
+        ''
+      ],
+      [
+        'Life',
+        life,
+        ''
+      ],
+      [
+        'Price',
+        price,
+        ''
+      ]
+    ]
+
+    // let attributeData = [];
+    // let valueData = [];
+    // planetAttributeData.forEach((entry) => {
+    //   attributeData.push(
+    //     <li>{entry[0]}</li>
+    //   );
+    //   valueData.push(
+    //     <li>{entry[1]} {entry[2]}</li>
+    //   );
+    // });
+
+    let attributeTable = planetAttributeData.map((attribute) => {
+      let tableRow =
+        <tr>
+          <td><p>{attribute[0]}</p></td>
+          <td><p>{attribute[1]} {attribute[2]}</p></td>
+        </tr>
+      return tableRow;
+    })
+
     return (
       <div className='planet-card'>
         <p className='planet-card-child planet-name'>{star} {planet}.</p>
 
         <SaveStar starred={starred} onClick={this.onSaveStarClick}/>
 
-        <p className='planet-card-child planet-attributes'>
+        {/*<p className='planet-card-child planet-attributes'>
           Diameter: {diameter}km<br />
           Average Temperature: {averageTemperature}&deg;C<br />
           Orbital Period: {orbitalPeriod} Earth-years<br />
@@ -67,7 +135,21 @@ class PlanetCard extends React.Component {
           Life: {life}<br />
           <br />
           £{price}
-        </p>
+        </p>*/}
+
+        {/*<div className='planet-attributes'>
+          <ul className='planet-card-child attributes-list'>
+            {attributeData}
+          </ul>
+
+          <ul className='planet-card-child values-list'>
+            {valueData}
+          </ul>
+        </div>*/}
+
+        <table className='planet-card-child planet-attributes'>
+          {attributeTable}
+        </table>
 
         <p className='planet-card-child planet-description'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
