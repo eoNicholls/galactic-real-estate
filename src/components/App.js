@@ -1,5 +1,4 @@
 import React from 'react';
-import FilteredPlanetList from './FilteredPlanetList.js';
 import FilterContainer from './FilterContainer.js';
 import jsonData from '../assets/planetData.json';
 
