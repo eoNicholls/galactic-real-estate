@@ -1,13 +1,10 @@
 /* these variables need to stay in proportion to each other if changed */
-:root {
+.switch-label {
   --switch-width: 25px;
   --switch-height: 15px;
   --slider-diameter: 10px;
   --slider-offset: 2.5px;
   --slider-transformation: 10px;
-}
-
-.switch-label {
 }
 
 /* The switch - the box around the slider */
@@ -58,7 +55,7 @@
 
 input:checked + .slider {
   /* background-color: #2196F3; */
-  background-color: #e0d090;
+  background-color: var(--highlight-color);
 }
 
 input:not(:checked) + .slider {
@@ -67,7 +64,7 @@ input:not(:checked) + .slider {
 
 input:focus + .slider {
   /* box-shadow: 0 0 1px #2196F3; */
-  box-shadow: 0 0 2px #e0d090;
+  box-shadow: 0 0 2px var(--highlight-color);
 }
 
 input:checked + .slider:before {

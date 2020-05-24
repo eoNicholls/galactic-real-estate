@@ -1,3 +1,7 @@
+:root {
+  --highlight-color: #e0d090;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +17,16 @@ header {
   padding: 1rem;
 }
 
+header > h1 {
+  text-align: center;
+  color: var(--highlight-color);
+  letter-spacing: +0.2em;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
 form {
+  margin: 1rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,14 +39,6 @@ form > div {
 
 main {
   padding: 1rem 5rem;
-}
-
-h1 {
-  text-align: center;
-  color: #e0d090;
-  letter-spacing: +0.2em;
-  font-weight: lighter;
-  font-size: 3rem;
 }
 
 input {
@@ -98,8 +103,8 @@ input {
 }
 
 .list-options {
+  margin: 0.5rem 0;
   display: flex;
-  margin-top: 0.5rem;
 }
 
 .pagination {
@@ -120,7 +125,15 @@ input {
   cursor: pointer;
 }
 
+.pagination *:focus-within {
+  outline: 1px solid grey;
+}
+
+.pagination *:focus {
+  outline: none;
+}
+
 .pagination > .active {
-  border: 1px solid white;
+  border: 1px solid var(--highlight-color);
   border-radius: 3px;
 }
