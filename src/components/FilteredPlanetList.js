@@ -1,6 +1,7 @@
 import React from 'react';
 import PlanetCard from './PlanetCard.js';
 import ReactPaginate from 'react-paginate';
+import Switch from './Switch.js';
 
 
 class FilteredPlanetList extends React.Component {
@@ -12,7 +13,8 @@ class FilteredPlanetList extends React.Component {
       planets: props.planets,
       searchField: props.searchField,
       priceRange: props.priceRange,
-      sortMethod: props.sortMethod
+      sortMethod: props.sortMethod,
+      animateImage: true
     }
   }
 
@@ -28,8 +30,19 @@ class FilteredPlanetList extends React.Component {
     this.setState({ currentPage: page.selected });
   }
 
+  onToggleAnimationSwitch = () => {
+    this.setState({ animateImage: !this.state.animateImage });
+  }
+
   render() {
-    const {planets, cardsPerPage, currentPage, searchField, sortMethod, priceRange} = this.state;
+    const {
+      planets,
+      cardsPerPage,
+      currentPage,
+      searchField,
+      sortMethod,
+      priceRange,
+      animateImage} = this.state;
 
     const filteredPlanets = planets.filter(planet => {
       // check planet price is in filtered range
@@ -60,7 +73,7 @@ class FilteredPlanetList extends React.Component {
     })
 
     let PlanetCardArray = filteredPlanets.map((planet, i) => {
-      filteredPlanets[i].animateImage = true;
+      filteredPlanets[i].animateImage = animateImage;
       return <PlanetCard
         key={filteredPlanets[i].id}
         props={filteredPlanets[i]}
@@ -87,13 +100,19 @@ class FilteredPlanetList extends React.Component {
       containerClassName={'pagination'}
       subContainerClassName={'pages pagination'}
       activeClassName={'active'}
-      forcePage={this.state.currentPage}
+      forcePage={currentPage}
     />
 
 
     return (
       <React.Fragment>
-        {Pagination}
+        <div className='list-options'>
+          <Switch
+            label='Animation'
+            onClick={this.onToggleAnimationSwitch}
+          />
+          {Pagination}
+        </div>
 
         <div className='planet-card-list'>
           {PlanetCardArray}

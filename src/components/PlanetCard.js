@@ -22,6 +22,10 @@ class PlanetCard extends React.Component {
     }
   }
 
+  static getDerivedStateFromProps(props, state) {
+    return { animateImage: props.props.animateImage };
+  }
+
   render() {
     const {
       animateImage,
