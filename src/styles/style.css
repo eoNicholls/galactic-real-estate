@@ -137,3 +137,18 @@ input {
   border: 1px solid var(--highlight-color);
   border-radius: 3px;
 }
+
+.save-star-button {
+  grid-area: planet-name;
+  justify-self: end;
+  position: relative;
+  right: 30px;
+  border: 0;
+  padding: 0;
+  width: 0;
+}
+
+.save-star {
+  color: var(--highlight-color);
+  font-size: 20px;
+}

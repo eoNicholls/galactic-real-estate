@@ -1,5 +1,6 @@
 import React from 'react';
 import AstraeaCanvas from './AstraeaCanvas.js';
+import SaveStar from './SaveStar.js';
 
 
 class PlanetCard extends React.Component {
@@ -18,12 +19,17 @@ class PlanetCard extends React.Component {
       composition: props.props.composition,
       atmosphere: props.props.atmosphere,
       water: props.props.water,
-      life: props.props.life
+      life: props.props.life,
+      starred: false
     }
   }
 
   static getDerivedStateFromProps(props, state) {
     return { animateImage: props.props.animateImage };
+  }
+
+  onSaveStarClick = () => {
+    this.setState({ starred: !this.state.starred });
   }
 
   render() {
@@ -40,12 +46,15 @@ class PlanetCard extends React.Component {
       composition,
       atmosphere,
       water,
-      life
+      life,
+      starred
     } = this.state;
 
     return (
       <div className='planet-card'>
         <p className='planet-card-child planet-name'>{star} {planet}.</p>
+
+        <SaveStar starred={starred} onClick={this.onSaveStarClick}/>
 
         <p className='planet-card-child planet-attributes'>
           Diameter: {diameter}km<br />
