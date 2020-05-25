@@ -12,7 +12,7 @@
     "composition": "Gaseous",
     "atmosphere": "Toxic to humans",
     "water": "Frozen",
-    "life": "Cellular"
+    "life": "Single-celled"
   },
   {
     "id": "e3a1515e4711c8644838a978cd8820e6",
@@ -27,7 +27,7 @@
     "composition": "Liquid",
     "atmosphere": "None",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "e2f462c25ee0544f8ff2373e2511d01c",
@@ -57,7 +57,7 @@
     "composition": "Liquid",
     "atmosphere": "None",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "737f865e5f38116f8083a03e70c766ba",
@@ -72,7 +72,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "4d0cd600e380ee849d5b884ea8184faf",
@@ -87,7 +87,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "6a03ff58d90561cf16a4d1bd8f6179e1",
@@ -237,7 +237,7 @@
     "composition": "Liquid",
     "atmosphere": "None",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "1a70e5992095025d0f3294902d301617",
@@ -267,7 +267,7 @@
     "composition": "Rocky",
     "atmosphere": "Breathable",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "f1671b923c10005394c67c7afe4adc4b",
@@ -297,7 +297,7 @@
     "composition": "Rocky",
     "atmosphere": "Breathable",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "0ce6dfb0c266419b6a0fd09304de8263",
@@ -327,7 +327,7 @@
     "composition": "Rocky",
     "atmosphere": "Toxic to humans",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "b52312cc076978a6a22dd857a108cdbb",
@@ -372,7 +372,7 @@
     "composition": "Rocky",
     "atmosphere": "Toxic to humans",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "ea45bab4f6162b95ecd2212bf5c76ee9",
@@ -567,7 +567,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "7389fc406777e379961850d8250fbe54",
@@ -597,7 +597,7 @@
     "composition": "Liquid",
     "atmosphere": "Toxic to humans",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "21da9f032dd08da8d96be8f814addddb",
@@ -612,7 +612,7 @@
     "composition": "Rocky",
     "atmosphere": "Breathable",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "70d9527d699a60e54c39a096044edc77",
@@ -672,7 +672,7 @@
     "composition": "Liquid",
     "atmosphere": "Toxic to humans",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "410c506f55c08468e48d9853cbc5aa88",
@@ -777,7 +777,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "9821014f5dac3cd8637f4c3f237e8477",
@@ -837,7 +837,7 @@
     "composition": "Rocky",
     "atmosphere": "None",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "eeeaff8c88837aff8827451ea940fa73",
@@ -882,7 +882,7 @@
     "composition": "Rocky",
     "atmosphere": "None",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "39960e0aa148b543232ffdcdaeb1884e",
@@ -897,7 +897,7 @@
     "composition": "Liquid",
     "atmosphere": "Toxic to humans",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "4b0cfb3715b60465db035ec3186960e1",
@@ -972,7 +972,7 @@
     "composition": "Rocky",
     "atmosphere": "None",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "3261cb2f4efb20ce344bfbd50aac6a23",
@@ -1047,7 +1047,7 @@
     "composition": "Liquid",
     "atmosphere": "Breathable",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "d3cb3cb1f8d85b14e83b9429d8f6f3b3",
@@ -1062,7 +1062,7 @@
     "composition": "Rocky",
     "atmosphere": "None",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "3da40c7dd796251d34030e83566b0ff0",
@@ -1077,7 +1077,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "a2168b26807f631517f50f7b05ab4dfc",
@@ -1092,7 +1092,7 @@
     "composition": "Liquid",
     "atmosphere": "Toxic to humans",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "ec927327b947a6d26a574c189baa29b6",
@@ -1107,7 +1107,7 @@
     "composition": "Gaseous",
     "atmosphere": "Toxic to humans",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "e6de114082cdc3da067e9f146b7c45be",
@@ -1227,7 +1227,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "81641ad56b7a5cd4aacb6bcf86be58a9",
@@ -1257,7 +1257,7 @@
     "composition": "Rocky",
     "atmosphere": "Toxic to humans",
     "water": "Liquid",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "62972929c06ba0c92b1bef051e6afc85",
@@ -1272,7 +1272,7 @@
     "composition": "Liquid",
     "atmosphere": "Toxic to humans",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "7ad59af7c0caa24722acb82b1cda6312",
@@ -1287,7 +1287,7 @@
     "composition": "Rocky",
     "atmosphere": "Breathable",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "3157cec42a20694907b5915d10c759f1",
@@ -1317,7 +1317,7 @@
     "composition": "Gaseous",
     "atmosphere": "Breathable",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "fe2266609cd564c2aa966997f816fe91",
@@ -1347,7 +1347,7 @@
     "composition": "Rocky",
     "atmosphere": "Breathable",
     "water": "Frozen",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "41db545b5946007c0ee355de3ad77593",
@@ -1362,7 +1362,7 @@
     "composition": "Rocky",
     "atmosphere": "None",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "5a2db104f6fdcffe5caa77d40a533eb1",
@@ -1407,7 +1407,7 @@
     "composition": "Rocky",
     "atmosphere": "Breathable",
     "water": "None",
-    "life": "multicellular"
+    "life": "Multicellular"
   },
   {
     "id": "58087ebf169ccc8f1bee524f40e1f1bb",
