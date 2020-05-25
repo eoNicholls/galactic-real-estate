@@ -56,6 +56,7 @@ class FilteredPlanetList extends React.Component {
       // function to check if a given value contains the search string
       // used to check against each value of the given planet
       const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchField.toLowerCase());
+      
       const planetValues = Object.values(planet);
       const initialValue = includesSearchfieldCheck(planetValues[0]);
 
