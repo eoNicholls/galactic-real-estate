@@ -42,7 +42,8 @@ class FilteredPlanetList extends React.Component {
       searchField,
       sortMethod,
       priceRange,
-      animateImage} = this.state;
+      animateImage
+    } = this.state;
 
     const filteredPlanets = planets.filter(planet => {
       // check planet price is in filtered range
@@ -55,8 +56,8 @@ class FilteredPlanetList extends React.Component {
       // function to check if a given value contains the search string
       // used to check against each value of the given planet
       const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchField.toLowerCase());
-      let planetValues = Object.values(planet);
-      let initialValue = includesSearchfieldCheck(planetValues[0]);
+      const planetValues = Object.values(planet);
+      const initialValue = includesSearchfieldCheck(planetValues[0]);
 
       // function to reduce a planet to a boolean value depending on whether it contains the search string or not
       const reduceFunction = ((accumulator, currentValue) => {
@@ -84,11 +85,11 @@ class FilteredPlanetList extends React.Component {
     PlanetCardArray.sort(sortMethod);
 
     // pagination
-    let pageCount = Math.ceil(PlanetCardArray.length / cardsPerPage);
-    let pageStartIndex = currentPage * cardsPerPage;
+    const pageCount = Math.ceil(PlanetCardArray.length / cardsPerPage);
+    const pageStartIndex = currentPage * cardsPerPage;
     PlanetCardArray = PlanetCardArray.splice(pageStartIndex, cardsPerPage);
 
-    let Pagination = <ReactPaginate
+    const Pagination = <ReactPaginate
       previousLabel={'previous'}
       nextLabel={'next'}
       breakLabel={'...'}
