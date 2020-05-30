@@ -9,11 +9,10 @@
     "averageTemperature": -183,
     "orbitalPeriod": 144,
     "dayLength": 65,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2018-4-19-20-59-45-41"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Single-celled"
   },
   {
     "id": "e3a1515e4711c8644838a978cd8820e6",
@@ -25,11 +24,10 @@
     "averageTemperature": -81,
     "orbitalPeriod": 75,
     "dayLength": 234,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2018-0-17-11-21-46-20"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "e2f462c25ee0544f8ff2373e2511d01c",
@@ -41,11 +39,10 @@
     "averageTemperature": 200,
     "orbitalPeriod": 139,
     "dayLength": 56,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "none",
-    "dateAdded": "2016-11-15-22-56-59-48"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "None"
   },
   {
     "id": "53a197fbddb6c00fd5bed857c259fb69",
@@ -57,11 +54,10 @@
     "averageTemperature": -217,
     "orbitalPeriod": 57,
     "dayLength": 82,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2014-11-26-14-30-47-63"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "737f865e5f38116f8083a03e70c766ba",
@@ -73,11 +69,10 @@
     "averageTemperature": 297,
     "orbitalPeriod": 135,
     "dayLength": 64,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2010-3-2-9-6-31-49"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "4d0cd600e380ee849d5b884ea8184faf",
@@ -89,11 +84,10 @@
     "averageTemperature": 418,
     "orbitalPeriod": 161,
     "dayLength": 208,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2018-2-9-13-25-45-65"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "6a03ff58d90561cf16a4d1bd8f6179e1",
@@ -105,11 +99,10 @@
     "averageTemperature": 284,
     "orbitalPeriod": 8,
     "dayLength": 166,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2010-9-27-14-52-23-88"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "9c14770ecb3a40b72fd64f75cc030229",
@@ -121,11 +114,10 @@
     "averageTemperature": 386,
     "orbitalPeriod": 34,
     "dayLength": 141,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "cellular",
-    "dateAdded": "2011-9-9-6-59-47-30"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "Cellular"
   },
   {
     "id": "283a0fe1444716b7a5807f0e840c5942",
@@ -137,11 +129,10 @@
     "averageTemperature": 286,
     "orbitalPeriod": 25,
     "dayLength": 26,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "cellular",
-    "dateAdded": "2014-4-15-15-28-49-68"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "Cellular"
   },
   {
     "id": "0fc5155fed6513cde79ee1992bf9e5d7",
@@ -153,11 +144,10 @@
     "averageTemperature": 49,
     "orbitalPeriod": 92,
     "dayLength": 129,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2018-3-4-9-26-17-12"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "bc99dafd55eec6d61e59092195515498",
@@ -169,11 +159,10 @@
     "averageTemperature": -78,
     "orbitalPeriod": 192,
     "dayLength": 208,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2018-1-12-3-25-5-9"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "b2c96b23f17776fe824b8bd4de04e6aa",
@@ -185,11 +174,10 @@
     "averageTemperature": 94,
     "orbitalPeriod": 52,
     "dayLength": 153,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "none",
-    "dateAdded": "2010-5-24-18-49-39-21"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "None"
   },
   {
     "id": "01f17d3d4e0fd69ceffeb76ea37c27ce",
@@ -201,11 +189,10 @@
     "averageTemperature": 384,
     "orbitalPeriod": 198,
     "dayLength": 237,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "cellular",
-    "dateAdded": "2019-4-30-22-14-14-69"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "Cellular"
   },
   {
     "id": "ee52574619422e9fef5ea85c70511617",
@@ -217,11 +204,10 @@
     "averageTemperature": 90,
     "orbitalPeriod": 47,
     "dayLength": 185,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "none",
-    "dateAdded": "2010-5-6-18-22-54-92"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "None"
   },
   {
     "id": "bb476557570fca8cf5d10a98ab315d58",
@@ -233,11 +219,10 @@
     "averageTemperature": -109,
     "orbitalPeriod": 35,
     "dayLength": 49,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "none",
-    "dateAdded": "2015-6-14-21-55-15-11"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "None"
   },
   {
     "id": "9e62a3e5da5e43626218e3b8e4e21c71",
@@ -249,11 +234,10 @@
     "averageTemperature": -97,
     "orbitalPeriod": 75,
     "dayLength": 67,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2013-6-30-16-15-21-69"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "1a70e5992095025d0f3294902d301617",
@@ -265,11 +249,10 @@
     "averageTemperature": 58,
     "orbitalPeriod": 83,
     "dayLength": 21,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2016-2-20-0-6-21-24"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "b24541e38d5a3e2d4fa8c92d80b4b2fd",
@@ -281,11 +264,10 @@
     "averageTemperature": 124,
     "orbitalPeriod": 28,
     "dayLength": 157,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2013-10-2-0-20-45-1"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "f1671b923c10005394c67c7afe4adc4b",
@@ -297,11 +279,10 @@
     "averageTemperature": -146,
     "orbitalPeriod": 82,
     "dayLength": 87,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "none",
-    "dateAdded": "2014-8-16-23-20-44-7"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "None"
   },
   {
     "id": "eb9169062734727f25bf823c34857a7b",
@@ -313,11 +294,10 @@
     "averageTemperature": -189,
     "orbitalPeriod": 142,
     "dayLength": 237,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2011-4-16-0-32-55-41"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "0ce6dfb0c266419b6a0fd09304de8263",
@@ -329,11 +309,10 @@
     "averageTemperature": -19,
     "orbitalPeriod": 176,
     "dayLength": 201,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2018-0-22-16-54-45-77"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Intelligent"
   },
   {
     "id": "3342f47299354629e3425e71c313123f",
@@ -345,11 +324,10 @@
     "averageTemperature": -21,
     "orbitalPeriod": 158,
     "dayLength": 68,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2015-10-18-6-30-38-21"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "b52312cc076978a6a22dd857a108cdbb",
@@ -361,11 +339,10 @@
     "averageTemperature": -134,
     "orbitalPeriod": 85,
     "dayLength": 184,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2010-0-17-8-37-38-91"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "4c4436785d990b3bd6fa788b245df8aa",
@@ -377,11 +354,10 @@
     "averageTemperature": 282,
     "orbitalPeriod": 35,
     "dayLength": 203,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2012-2-8-0-17-37-29"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "c5333b18133449ee7c8ffd194a19e5ba",
@@ -393,11 +369,10 @@
     "averageTemperature": 419,
     "orbitalPeriod": 79,
     "dayLength": 133,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2010-6-24-2-59-40-64"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "ea45bab4f6162b95ecd2212bf5c76ee9",
@@ -409,11 +384,10 @@
     "averageTemperature": 426,
     "orbitalPeriod": 114,
     "dayLength": 85,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2011-0-10-13-34-16-92"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "bcfcc7dbb7ff46daffe67d2d6a317595",
@@ -425,11 +399,10 @@
     "averageTemperature": -166,
     "orbitalPeriod": 157,
     "dayLength": 232,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "none",
-    "dateAdded": "2011-3-21-2-17-34-25"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "None"
   },
   {
     "id": "80b1a8e5d6620bdb58658bb01a351cbd",
@@ -441,11 +414,10 @@
     "averageTemperature": 159,
     "orbitalPeriod": 188,
     "dayLength": 51,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "none",
-    "dateAdded": "2010-1-19-22-52-25-79"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "None"
   },
   {
     "id": "d674fa370e7404dc734fc149f6257598",
@@ -457,11 +429,10 @@
     "averageTemperature": 387,
     "orbitalPeriod": 166,
     "dayLength": 16,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2010-11-0-11-30-41-96"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "0282653631f1fdf321ff5d3dfe06eaa6",
@@ -473,11 +444,10 @@
     "averageTemperature": -111,
     "orbitalPeriod": 84,
     "dayLength": 57,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2013-2-20-0-18-33-27"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "Intelligent"
   },
   {
     "id": "c52739861c19aff0e8272aa3c1371d53",
@@ -489,11 +459,10 @@
     "averageTemperature": 310,
     "orbitalPeriod": 165,
     "dayLength": 215,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "cellular",
-    "dateAdded": "2011-10-1-15-3-58-47"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Cellular"
   },
   {
     "id": "e66261953657f9943b3a146a46826601",
@@ -505,11 +474,10 @@
     "averageTemperature": 98,
     "orbitalPeriod": 128,
     "dayLength": 133,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2018-6-25-3-50-23-71"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "13850d881e59b120eaffa667666906d2",
@@ -521,11 +489,10 @@
     "averageTemperature": -25,
     "orbitalPeriod": 38,
     "dayLength": 212,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2014-3-4-20-25-44-38"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Intelligent"
   },
   {
     "id": "10657bbb9bab7770d00b95caa2d10ff4",
@@ -537,11 +504,10 @@
     "averageTemperature": -91,
     "orbitalPeriod": 46,
     "dayLength": 215,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2018-11-3-1-45-11-37"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "184f9caad5dcf32eb0081511565f9939",
@@ -553,11 +519,10 @@
     "averageTemperature": 237,
     "orbitalPeriod": 101,
     "dayLength": 99,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2012-4-0-19-23-54-18"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "9f75966a8c8c7d95890f9c8ea084fa8e",
@@ -569,11 +534,10 @@
     "averageTemperature": 407,
     "orbitalPeriod": 104,
     "dayLength": 114,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2018-11-2-0-23-57-77"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "f59bc18d18c2cb971da22e917baca6b7",
@@ -585,11 +549,10 @@
     "averageTemperature": 76,
     "orbitalPeriod": 126,
     "dayLength": 38,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2014-5-23-1-26-5-21"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "84d60cee2817a229e8d253420f19c5b9",
@@ -601,11 +564,10 @@
     "averageTemperature": 92,
     "orbitalPeriod": 33,
     "dayLength": 20,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2013-7-15-17-48-7-24"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "7389fc406777e379961850d8250fbe54",
@@ -617,11 +579,10 @@
     "averageTemperature": 411,
     "orbitalPeriod": 8,
     "dayLength": 103,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2011-6-27-9-20-3-26"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "Intelligent"
   },
   {
     "id": "3b1a3f2c854268e2d0a6c84038c18741",
@@ -633,11 +594,10 @@
     "averageTemperature": 467,
     "orbitalPeriod": 58,
     "dayLength": 8,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2010-5-30-3-24-47-66"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "21da9f032dd08da8d96be8f814addddb",
@@ -649,11 +609,10 @@
     "averageTemperature": -143,
     "orbitalPeriod": 98,
     "dayLength": 47,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2016-9-7-7-57-47-74"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "70d9527d699a60e54c39a096044edc77",
@@ -665,11 +624,10 @@
     "averageTemperature": 56,
     "orbitalPeriod": 112,
     "dayLength": 173,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2015-5-19-20-45-52-98"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "a49e6608ce87d602cd80e1de6352e470",
@@ -681,11 +639,10 @@
     "averageTemperature": -192,
     "orbitalPeriod": 163,
     "dayLength": 10,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2011-3-5-1-9-52-4"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "9201ba05d0b8b5e5f2739ffbbc415989",
@@ -697,11 +654,10 @@
     "averageTemperature": 383,
     "orbitalPeriod": 52,
     "dayLength": 40,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2014-10-26-22-44-8-6"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "fef09674da14543b8c89b0367fc5a303",
@@ -713,11 +669,10 @@
     "averageTemperature": 186,
     "orbitalPeriod": 10,
     "dayLength": 90,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2014-3-26-7-2-10-91"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "410c506f55c08468e48d9853cbc5aa88",
@@ -729,11 +684,10 @@
     "averageTemperature": -164,
     "orbitalPeriod": 77,
     "dayLength": 175,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2019-8-20-3-36-12-68"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "fab13f2f64238a88a66ad4c0d55342cc",
@@ -745,11 +699,10 @@
     "averageTemperature": 377,
     "orbitalPeriod": 196,
     "dayLength": 53,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2017-8-24-18-13-7-27"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "a3507179a87b0c8e3825e1e5dfd5dd53",
@@ -761,11 +714,10 @@
     "averageTemperature": -180,
     "orbitalPeriod": 10,
     "dayLength": 193,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2017-1-20-14-4-12-27"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "0c95f38db5c6265def33e04d85c8cd12",
@@ -777,11 +729,10 @@
     "averageTemperature": 215,
     "orbitalPeriod": 148,
     "dayLength": 77,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2019-2-25-3-25-22-2"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "c2fc2940138e925f3b1b7af997c6fbc0",
@@ -793,11 +744,10 @@
     "averageTemperature": 224,
     "orbitalPeriod": 103,
     "dayLength": 230,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2014-0-3-17-14-38-33"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "f800df6428052db7e73e9d8dc1045ddd",
@@ -809,11 +759,10 @@
     "averageTemperature": 449,
     "orbitalPeriod": 53,
     "dayLength": 191,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "cellular",
-    "dateAdded": "2015-9-11-15-52-3-24"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Cellular"
   },
   {
     "id": "8292912c2ef78438627b67004a6c029d",
@@ -825,11 +774,10 @@
     "averageTemperature": 237,
     "orbitalPeriod": 172,
     "dayLength": 182,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2017-10-4-23-45-14-58"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "9821014f5dac3cd8637f4c3f237e8477",
@@ -841,11 +789,10 @@
     "averageTemperature": 355,
     "orbitalPeriod": 131,
     "dayLength": 84,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2014-8-16-21-15-43-82"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "7ee10b705c2119f84283d2ad3ff75e2f",
@@ -857,11 +804,10 @@
     "averageTemperature": 449,
     "orbitalPeriod": 133,
     "dayLength": 125,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "none",
-    "dateAdded": "2010-9-13-17-57-18-3"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "None"
   },
   {
     "id": "77f81648c17b4a39032d20687787938e",
@@ -873,11 +819,10 @@
     "averageTemperature": 9,
     "orbitalPeriod": 10,
     "dayLength": 116,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2012-9-13-1-48-2-74"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Intelligent"
   },
   {
     "id": "f2444997ea1f4da45d1aa8b3ba1fbb6d",
@@ -889,11 +834,10 @@
     "averageTemperature": 289,
     "orbitalPeriod": 26,
     "dayLength": 129,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2016-9-27-0-45-14-16"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "eeeaff8c88837aff8827451ea940fa73",
@@ -905,11 +849,10 @@
     "averageTemperature": 427,
     "orbitalPeriod": 129,
     "dayLength": 234,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2019-0-9-16-50-45-76"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "99d7fc48747843f3c244e2c511a47d5b",
@@ -921,11 +864,10 @@
     "averageTemperature": 307,
     "orbitalPeriod": 5,
     "dayLength": 199,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2011-10-9-22-3-17-98"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "9a7c54d3b30f2e438c6dd10f03d21887",
@@ -937,11 +879,10 @@
     "averageTemperature": 93,
     "orbitalPeriod": 57,
     "dayLength": 53,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2012-8-1-14-29-29-19"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "39960e0aa148b543232ffdcdaeb1884e",
@@ -953,11 +894,10 @@
     "averageTemperature": 464,
     "orbitalPeriod": 58,
     "dayLength": 86,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2019-2-1-19-53-46-74"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "4b0cfb3715b60465db035ec3186960e1",
@@ -969,11 +909,10 @@
     "averageTemperature": 177,
     "orbitalPeriod": 22,
     "dayLength": 181,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "none",
-    "dateAdded": "2014-7-24-23-42-31-45"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "None"
   },
   {
     "id": "08f8d61bc11bd840447ef8f85be0c75e",
@@ -985,11 +924,10 @@
     "averageTemperature": 422,
     "orbitalPeriod": 70,
     "dayLength": 1,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2012-0-22-14-2-6-5"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "7cff75868774a6a3add721bedff2f6d5",
@@ -1001,11 +939,10 @@
     "averageTemperature": 167,
     "orbitalPeriod": 20,
     "dayLength": 238,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2014-11-20-23-50-8-91"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "735c016fd584ce12a367ae4b2303c7f8",
@@ -1017,11 +954,10 @@
     "averageTemperature": 229,
     "orbitalPeriod": 192,
     "dayLength": 78,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2011-5-29-7-27-44-48"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "696893cab3e69a3865f62b04c161f974",
@@ -1033,11 +969,10 @@
     "averageTemperature": 274,
     "orbitalPeriod": 90,
     "dayLength": 121,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2016-1-24-15-37-12-60"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "3261cb2f4efb20ce344bfbd50aac6a23",
@@ -1049,11 +984,10 @@
     "averageTemperature": 255,
     "orbitalPeriod": 99,
     "dayLength": 160,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2016-1-29-12-17-47-52"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "bd34d868ebf93f17d9ed8b593f3288b4",
@@ -1065,11 +999,10 @@
     "averageTemperature": 203,
     "orbitalPeriod": 199,
     "dayLength": 188,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "none",
-    "dateAdded": "2013-2-11-15-16-28-59"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "None"
   },
   {
     "id": "49055b16796cb2385e0ba5d1c3d1b91a",
@@ -1081,11 +1014,10 @@
     "averageTemperature": 447,
     "orbitalPeriod": 29,
     "dayLength": 98,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "none",
-    "dateAdded": "2016-1-31-23-57-28-63"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "None"
   },
   {
     "id": "84c6c7ca3fd26e4b74cec064c0c7914d",
@@ -1097,11 +1029,10 @@
     "averageTemperature": 151,
     "orbitalPeriod": 130,
     "dayLength": 105,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2011-6-12-8-29-21-28"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "1dc87c00fabfa90c88efade6d2069aba",
@@ -1113,11 +1044,10 @@
     "averageTemperature": -81,
     "orbitalPeriod": 28,
     "dayLength": 45,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2013-4-10-2-22-38-92"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "d3cb3cb1f8d85b14e83b9429d8f6f3b3",
@@ -1129,11 +1059,10 @@
     "averageTemperature": 358,
     "orbitalPeriod": 42,
     "dayLength": 153,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2010-4-23-7-48-40-35"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "3da40c7dd796251d34030e83566b0ff0",
@@ -1145,11 +1074,10 @@
     "averageTemperature": -207,
     "orbitalPeriod": 113,
     "dayLength": 25,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2013-7-14-0-2-41-43"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "a2168b26807f631517f50f7b05ab4dfc",
@@ -1161,11 +1089,10 @@
     "averageTemperature": 216,
     "orbitalPeriod": 167,
     "dayLength": 147,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2016-11-26-14-58-56-97"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "ec927327b947a6d26a574c189baa29b6",
@@ -1177,11 +1104,10 @@
     "averageTemperature": 75,
     "orbitalPeriod": 166,
     "dayLength": 99,
-    "composition": "gaseous",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2015-5-18-0-45-48-8"
+    "composition": "Gaseous",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "e6de114082cdc3da067e9f146b7c45be",
@@ -1193,11 +1119,10 @@
     "averageTemperature": 310,
     "orbitalPeriod": 127,
     "dayLength": 241,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2016-6-26-11-33-27-41"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "9266412e500518fadc0fba9e557a1125",
@@ -1209,11 +1134,10 @@
     "averageTemperature": 258,
     "orbitalPeriod": 91,
     "dayLength": 201,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2014-11-31-9-38-59-55"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "64ebe07fd757b1b67d9c6745b870e99c",
@@ -1225,11 +1149,10 @@
     "averageTemperature": 337,
     "orbitalPeriod": 130,
     "dayLength": 167,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2017-3-27-15-41-30-36"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "25b6332998be6206cceb875a36eca77a",
@@ -1241,11 +1164,10 @@
     "averageTemperature": 357,
     "orbitalPeriod": 38,
     "dayLength": 78,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2016-8-13-1-31-28-74"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "7e1fa7c98e9f7be8752706c7e25f0b88",
@@ -1257,11 +1179,10 @@
     "averageTemperature": 434,
     "orbitalPeriod": 170,
     "dayLength": 225,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "cellular",
-    "dateAdded": "2014-3-21-10-32-54-95"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Cellular"
   },
   {
     "id": "587d2458e1544b265c1af6d838763917",
@@ -1273,11 +1194,10 @@
     "averageTemperature": 5,
     "orbitalPeriod": 1,
     "dayLength": 2,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2018-2-9-15-33-3-0"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "44d3015f76d64aaf8957cabaf2804e03",
@@ -1289,11 +1209,10 @@
     "averageTemperature": 465,
     "orbitalPeriod": 84,
     "dayLength": 209,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "none",
-    "dateAdded": "2011-7-22-4-16-45-68"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "None"
   },
   {
     "id": "58f11508c4d5fdab03091db31466e10e",
@@ -1305,11 +1224,10 @@
     "averageTemperature": -40,
     "orbitalPeriod": 126,
     "dayLength": 192,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2013-4-7-7-20-6-74"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "81641ad56b7a5cd4aacb6bcf86be58a9",
@@ -1321,11 +1239,10 @@
     "averageTemperature": 229,
     "orbitalPeriod": 22,
     "dayLength": 80,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2018-5-29-8-50-19-17"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "c9a8919dc466bf19b2fa200771a77fcc",
@@ -1337,11 +1254,10 @@
     "averageTemperature": 155,
     "orbitalPeriod": 140,
     "dayLength": 113,
-    "composition": "rocky",
-    "atmosphere": "toxic to humans",
-    "water": "liquid",
-    "life": "multicellular",
-    "dateAdded": "2017-0-12-6-58-12-91"
+    "composition": "Rocky",
+    "atmosphere": "Toxic to humans",
+    "water": "Liquid",
+    "life": "Multicellular"
   },
   {
     "id": "62972929c06ba0c92b1bef051e6afc85",
@@ -1353,11 +1269,10 @@
     "averageTemperature": -10,
     "orbitalPeriod": 79,
     "dayLength": 122,
-    "composition": "liquid",
-    "atmosphere": "toxic to humans",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2010-1-14-3-32-47-30"
+    "composition": "Liquid",
+    "atmosphere": "Toxic to humans",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "7ad59af7c0caa24722acb82b1cda6312",
@@ -1369,11 +1284,10 @@
     "averageTemperature": 164,
     "orbitalPeriod": 135,
     "dayLength": 136,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2018-3-29-20-30-25-84"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "3157cec42a20694907b5915d10c759f1",
@@ -1385,11 +1299,10 @@
     "averageTemperature": -13,
     "orbitalPeriod": 14,
     "dayLength": 109,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2015-10-4-4-9-38-76"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "8c39cbccd2436cdec0e6e851e8f716e1",
@@ -1401,11 +1314,10 @@
     "averageTemperature": 309,
     "orbitalPeriod": 151,
     "dayLength": 82,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2010-11-24-10-6-19-80"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "fe2266609cd564c2aa966997f816fe91",
@@ -1417,11 +1329,10 @@
     "averageTemperature": 123,
     "orbitalPeriod": 42,
     "dayLength": 235,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "intelligent",
-    "dateAdded": "2014-8-13-4-38-20-3"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Intelligent"
   },
   {
     "id": "f502714eb5df85f441e5bce76476956d",
@@ -1433,11 +1344,10 @@
     "averageTemperature": 340,
     "orbitalPeriod": 114,
     "dayLength": 145,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "multicellular",
-    "dateAdded": "2010-1-5-21-39-7-72"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Multicellular"
   },
   {
     "id": "41db545b5946007c0ee355de3ad77593",
@@ -1449,11 +1359,10 @@
     "averageTemperature": 107,
     "orbitalPeriod": 121,
     "dayLength": 184,
-    "composition": "rocky",
-    "atmosphere": "none",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2011-11-21-13-33-21-37"
+    "composition": "Rocky",
+    "atmosphere": "None",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "5a2db104f6fdcffe5caa77d40a533eb1",
@@ -1465,11 +1374,10 @@
     "averageTemperature": 93,
     "orbitalPeriod": 16,
     "dayLength": 167,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2013-5-27-21-57-25-37"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "ecfe716978ef25de4a5f19ff043cbeca",
@@ -1481,11 +1389,10 @@
     "averageTemperature": 217,
     "orbitalPeriod": 113,
     "dayLength": 221,
-    "composition": "liquid",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2018-10-22-15-40-40-74"
+    "composition": "Liquid",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Intelligent"
   },
   {
     "id": "165e1ea2b0920845f370d6005b978095",
@@ -1497,11 +1404,10 @@
     "averageTemperature": -181,
     "orbitalPeriod": 146,
     "dayLength": 236,
-    "composition": "rocky",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "multicellular",
-    "dateAdded": "2017-7-20-17-20-45-9"
+    "composition": "Rocky",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Multicellular"
   },
   {
     "id": "58087ebf169ccc8f1bee524f40e1f1bb",
@@ -1513,11 +1419,10 @@
     "averageTemperature": 298,
     "orbitalPeriod": 161,
     "dayLength": 105,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "liquid",
-    "life": "cellular",
-    "dateAdded": "2018-5-20-0-37-13-2"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "Liquid",
+    "life": "Cellular"
   },
   {
     "id": "d443b47d7696aea82517bc251b125599",
@@ -1529,11 +1434,10 @@
     "averageTemperature": 461,
     "orbitalPeriod": 28,
     "dayLength": 99,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2012-2-16-20-58-4-42"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "27f3a93ddb56239bfe89bd2e5d714c5c",
@@ -1545,11 +1449,10 @@
     "averageTemperature": -92,
     "orbitalPeriod": 96,
     "dayLength": 20,
-    "composition": "gaseous",
-    "atmosphere": "breathable",
-    "water": "frozen",
-    "life": "intelligent",
-    "dateAdded": "2015-6-21-17-14-11-17"
+    "composition": "Gaseous",
+    "atmosphere": "Breathable",
+    "water": "Frozen",
+    "life": "Intelligent"
   },
   {
     "id": "ab63fc7fb6dea59f20b326e931875b56",
@@ -1561,11 +1464,10 @@
     "averageTemperature": 463,
     "orbitalPeriod": 11,
     "dayLength": 144,
-    "composition": "liquid",
-    "atmosphere": "breathable",
-    "water": "none",
-    "life": "cellular",
-    "dateAdded": "2014-2-11-9-43-9-34"
+    "composition": "Liquid",
+    "atmosphere": "Breathable",
+    "water": "None",
+    "life": "Cellular"
   },
   {
     "id": "4fe064e722d3345718a3841c7f1c9244",
@@ -1577,10 +1479,9 @@
     "averageTemperature": -204,
     "orbitalPeriod": 61,
     "dayLength": 114,
-    "composition": "gaseous",
-    "atmosphere": "none",
-    "water": "liquid",
-    "life": "intelligent",
-    "dateAdded": "2013-5-2-23-24-0-12"
+    "composition": "Gaseous",
+    "atmosphere": "None",
+    "water": "Liquid",
+    "life": "Intelligent"
   }
 ]
