@@ -98,20 +98,9 @@ class PlanetCard extends React.Component {
       ]
     ]
 
-    // let attributeData = [];
-    // let valueData = [];
-    // planetAttributeData.forEach((entry) => {
-    //   attributeData.push(
-    //     <li>{entry[0]}</li>
-    //   );
-    //   valueData.push(
-    //     <li>{entry[1]} {entry[2]}</li>
-    //   );
-    // });
-
     let attributeTable = planetAttributeData.map((attribute) => {
       let tableRow =
-        <tr>
+        <tr key={attribute[0]}>
           <td><p>{attribute[0]}</p></td>
           <td><p>{attribute[1]} {attribute[2]}</p></td>
         </tr>
@@ -124,31 +113,10 @@ class PlanetCard extends React.Component {
 
         <SaveStar starred={starred} onClick={this.onSaveStarClick}/>
 
-        {/*<p className='planet-card-child planet-attributes'>
-          Diameter: {diameter}km<br />
-          Average Temperature: {averageTemperature}&deg;C<br />
-          Orbital Period: {orbitalPeriod} Earth-years<br />
-          Day Length: {dayLength} Earth-days<br />
-          Composition: {composition}<br />
-          Atmosphere: {atmosphere}<br />
-          Water: {water}<br />
-          Life: {life}<br />
-          <br />
-          £{price}
-        </p>*/}
-
-        {/*<div className='planet-attributes'>
-          <ul className='planet-card-child attributes-list'>
-            {attributeData}
-          </ul>
-
-          <ul className='planet-card-child values-list'>
-            {valueData}
-          </ul>
-        </div>*/}
-
         <table className='planet-card-child planet-attributes'>
-          {attributeTable}
+          <tbody>
+            {attributeTable}
+          </tbody>
         </table>
 
         <p className='planet-card-child planet-description'>
