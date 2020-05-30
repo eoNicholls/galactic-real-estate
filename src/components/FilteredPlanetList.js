@@ -2,6 +2,7 @@ import React from 'react';
 import PlanetCard from './PlanetCard.js';
 import ReactPaginate from 'react-paginate';
 import Switch from './Switch.js';
+import KeywordSearch from '../utils/KeywordSearch.js';
 
 
 class FilteredPlanetList extends React.Component {
@@ -11,7 +12,7 @@ class FilteredPlanetList extends React.Component {
       cardsPerPage: 10,
       currentPage: 0,
       planets: props.planets,
-      searchField: props.searchField,
+      searchTerms: props.searchTerms,
       priceRange: props.priceRange,
       sortMethod: props.sortMethod,
       animateImage: true
@@ -20,7 +21,7 @@ class FilteredPlanetList extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     return {
-      searchField: props.searchField,
+      searchTerms: props.searchTerms,
       priceRange: props.priceRange,
       sortMethod: props.sortMethod
     };
@@ -39,10 +40,10 @@ class FilteredPlanetList extends React.Component {
       planets,
       cardsPerPage,
       currentPage,
-      searchField,
       sortMethod,
       priceRange,
-      animateImage
+      animateImage,
+      searchTerms
     } = this.state;
 
     const filteredPlanets = planets.filter(planet => {
@@ -53,26 +54,11 @@ class FilteredPlanetList extends React.Component {
         }
       }
 
-      // function to check if a given value contains the search string
-      // used to check against each value of the given planet
-      const includesSearchfieldCheck = (value) => String(value).toLowerCase().includes(searchField.toLowerCase());
-      
-      const planetValues = Object.values(planet);
-      const initialValue = includesSearchfieldCheck(planetValues[0]);
-
-      // function to reduce a planet to a boolean value depending on whether it contains the search string or not
-      const reduceFunction = ((accumulator, currentValue) => {
-        currentValue = includesSearchfieldCheck(currentValue);
-        return currentValue || accumulator;
-      });
-
-      // reduce function is called here
-      // initialValue is used to check against the first value in the planet
-      return planetValues.reduce(
-        reduceFunction,
-        initialValue
-      ) === true ? true : false;
+      // check searchTerms against planet attributes
+      return KeywordSearch.checkObject(planet, searchTerms);
     })
+
+
 
     let PlanetCardArray = filteredPlanets.map((planet, i) => {
       filteredPlanets[i].animateImage = animateImage;

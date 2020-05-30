@@ -4,6 +4,7 @@ import SortField from './SortField.js';
 import PriceRangeField from './PriceRangeField.js';
 import ErrorMessageContainer from './ErrorMessageContainer.js';
 import FilteredPlanetList from './FilteredPlanetList.js';
+import KeywordSearch from '../utils/KeywordSearch.js';
 
 
 class FilterContainer extends React.Component {
@@ -13,7 +14,8 @@ class FilterContainer extends React.Component {
       objects: props.objects,
       searchField: '',
       priceRange: [-Infinity, Infinity],
-      sortMethod: (a, b) => 1
+      sortMethod: (a, b) => 1,
+      searchTerms: new Map()
     }
   }
 
@@ -44,7 +46,8 @@ class FilterContainer extends React.Component {
     this.setState({
       searchField: this.buffer.searchField,
       priceRange: this.buffer.priceRange,
-      sortMethod: this.buffer.sortMethod
+      sortMethod: this.buffer.sortMethod,
+      searchTerms: KeywordSearch.parseSearchString(this.buffer.searchField)
     });
   }
 
@@ -70,7 +73,7 @@ class FilterContainer extends React.Component {
 
 
   render() {
-    const {objects, searchField, sortMethod, priceRange} = this.state;
+    const {objects, searchField, sortMethod, priceRange, searchTerms} = this.state;
     return(
       <React.Fragment>
         <form>
@@ -91,9 +94,9 @@ class FilterContainer extends React.Component {
 
         <FilteredPlanetList
           planets={objects}
-          searchField={searchField}
+          searchTerms={searchTerms}
           sortMethod={sortMethod}
-          priceRange={priceRange} />
+          priceRange={priceRange}/>
       </React.Fragment>
     )
   }

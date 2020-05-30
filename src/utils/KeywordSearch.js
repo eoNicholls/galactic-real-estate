@@ -49,18 +49,19 @@ class KeywordSearch {
 
     let result = true;
 
+    let objectCopy = {};
     for (const key in object) {
-      object[key] = object[key].toString().toLowerCase();
+      objectCopy[key] = object[key].toString().toLowerCase();
     }
 
-    const objectValues = Object.values(object);
+    const objectValues = Object.values(objectCopy);
 
     for (const attribute of searchTerms) {
       if (attribute[0].slice(0, 18) === 'undefinedAttribute') {
         result = objectValues.includes(attribute[1]) && result;
 
       } else {
-        result = (object[attribute[0]] === attribute[1])
+        result = (objectCopy[attribute[0]].includes(attribute[1]))
           ? true && result
           : false
       }
