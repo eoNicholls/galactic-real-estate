@@ -55,10 +55,10 @@ class FilteredPlanetList extends React.Component {
       }
 
       // check searchTerms against planet attributes
-      return KeywordSearch.checkObject(planet, searchTerms);
+      return (searchTerms.size > 0)
+        ? KeywordSearch.checkObject(planet, searchTerms)
+        : true
     })
-
-
 
     let PlanetCardArray = filteredPlanets.map((planet, i) => {
       filteredPlanets[i].animateImage = animateImage;

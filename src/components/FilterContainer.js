@@ -46,9 +46,10 @@ class FilterContainer extends React.Component {
     this.setState({
       searchField: this.buffer.searchField,
       priceRange: this.buffer.priceRange,
-      sortMethod: this.buffer.sortMethod,
-      searchTerms: KeywordSearch.parseSearchString(this.buffer.searchField)
+      sortMethod: this.buffer.sortMethod
     });
+
+    if (this.state.searchField !== '') searchTerms: KeywordSearch.parseSearchString(this.buffer.searchField)
   }
 
   sortMethods = {
