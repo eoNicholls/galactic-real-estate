@@ -1,6 +1,10 @@
 class KeywordSearch {
 
   static parseSearchString(string) {
+    /*
+    returns a Map object containing all key:value pairs in the search string
+    */
+
     const acceptableCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789 :,';
 
     // remove all punctuation except : and ,
@@ -26,11 +30,12 @@ class KeywordSearch {
 		matches = matches.map((match) => {
 			return (reKeysValues.test(match))
 				? match.split(':').map(m => m.trim())
-				: ['undefinedAttribute', match.trim()]
+				: ['undefinedAttribute'+match.trim(), match.trim()]
 		});
 
 		return new Map(matches);
   }
+
 
   static checkObject(object, searchTerms) {
     /*
@@ -45,7 +50,7 @@ class KeywordSearch {
     let result = false;
 
     for (const attribute of searchTerms) {
-      if (attribute[0] === 'undefinedAttribute') {
+      if (attribute[0].slice(0, 18) === 'undefinedAttribute') {
         const objectValues = Object.values(object);
         result = objectValues.includes(attribute[1]);
 
