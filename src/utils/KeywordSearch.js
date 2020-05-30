@@ -49,9 +49,12 @@ class KeywordSearch {
 
     let result = false;
 
-    for (const attribute of searchTerms) {
+    const objectValues = Object.values(object).map(value => {
+      return value.toString().toLowerCase();
+    })
+
+    for (let attribute of searchTerms) {
       if (attribute[0].slice(0, 18) === 'undefinedAttribute') {
-        const objectValues = Object.values(object);
         result = objectValues.includes(attribute[1]);
 
       } else {
