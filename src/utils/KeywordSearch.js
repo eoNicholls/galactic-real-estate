@@ -47,19 +47,21 @@ class KeywordSearch {
       the following checks all search values against the object values
     */
 
-    let result = false;
+    let result = true;
 
-    const objectValues = Object.values(object).map(value => {
-      return value.toString().toLowerCase();
-    })
+    for (const key in object) {
+      object[key] = object[key].toString().toLowerCase();
+    }
 
-    for (let attribute of searchTerms) {
+    const objectValues = Object.values(object);
+
+    for (const attribute of searchTerms) {
       if (attribute[0].slice(0, 18) === 'undefinedAttribute') {
-        result = objectValues.includes(attribute[1]);
+        result = objectValues.includes(attribute[1]) && result;
 
       } else {
         result = (object[attribute[0]] === attribute[1])
-          ? true
+          ? true && result
           : false
       }
     }
