@@ -14,7 +14,7 @@ class FilterContainer extends React.Component {
       objects: props.objects,
       searchField: '',
       priceRange: [-Infinity, Infinity],
-      sortMethod: (a, b) => 1,
+      sortMethod: (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf(),
       searchTerms: new Map()
     }
   }
@@ -22,7 +22,7 @@ class FilterContainer extends React.Component {
   buffer = {
     searchField: '',
     priceRange: [-Infinity, Infinity],
-    sortMethod: (a, b) => 1
+    sortMethod: (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf()
   }
 
   onSearchFieldChange = (event) => {
@@ -56,7 +56,7 @@ class FilterContainer extends React.Component {
     default: [
       'default',
       '-',
-      (a, b) => 1
+      (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf()
     ],
 
     priceAscending: [
@@ -69,6 +69,18 @@ class FilterContainer extends React.Component {
       'priceDescending',
       'price (high to low)',
       (a, b) => b.props.props.price - a.props.props.price
+    ],
+
+    dateAscending: [
+      'dateAscending',
+      'date added (oldest first)',
+      (a, b) => a.props.props.dateAdded.valueOf() - b.props.props.dateAdded.valueOf()
+    ],
+
+    dateDescending: [
+      'dateDescending',
+      'date added (most recent first)',
+      (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf()
     ]
   }
 

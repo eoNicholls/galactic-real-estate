@@ -20,12 +20,15 @@ class PlanetCard extends React.Component {
       atmosphere: props.props.atmosphere,
       water: props.props.water,
       life: props.props.life,
+      dateAdded: props.props.dateAdded,
       starred: false
     }
   }
 
   static getDerivedStateFromProps(props, state) {
-    return { animateImage: props.props.animateImage };
+    return {
+      animateImage: props.props.animateImage
+    };
   }
 
   onSaveStarClick = () => {
@@ -47,6 +50,7 @@ class PlanetCard extends React.Component {
       atmosphere,
       water,
       life,
+      dateAdded,
       starred
     } = this.state;
 
