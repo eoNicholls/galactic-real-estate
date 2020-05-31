@@ -29,7 +29,7 @@ const PriceRangeField = ({ onChange, label, step }) => {
     // necessary because I cannot use <input type='number' /> as that won't allow commas
     if (isNaN(value.slice(-1))) value = value.slice(0, -1);
 
-    // remove commas for the event value that is sent to App.onPriceFieldChange()
+    // remove commas for the event value that is sent to parent component
     event.target.value = value;
     onChange(event);
 
