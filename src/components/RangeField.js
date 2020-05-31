@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const PriceRangeField = ({ props }) => {
+const PriceRangeField = ({ onChange, label, step }) => {
 
   // this function changes the number format from iii,iii,iii back to iiiiiiiii
   const fromLocaleString = function(value) {
@@ -33,7 +33,7 @@ const PriceRangeField = ({ props }) => {
 
     // remove commas for the event value that is sent to App.onPriceFieldChange()
     event.target.value = value;
-    props(event);
+    onChange(event);
 
     // changes the value to a more readable format (including commas)
     if (value === '') {
@@ -46,10 +46,10 @@ const PriceRangeField = ({ props }) => {
 
   return (
     <div>
-      <label>Price from:</label>
-      <input name='min' placeholder='Min' step='1000' onChange={onChangeEvent} />
+      <label>{label}</label>
+      <input name='min' placeholder='Min' step={step} onChange={onChangeEvent} />
       <label>to:</label>
-      <input name='max' placeholder='Max' step='1000' onChange={onChangeEvent} />
+      <input name='max' placeholder='Max' step={step} onChange={onChangeEvent} />
     </div>
   )
 }

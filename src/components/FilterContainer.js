@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchField from './SearchField.js';
 import SortField from './SortField.js';
-import PriceRangeField from './PriceRangeField.js';
+import RangeField from './RangeField.js';
 import ErrorMessageContainer from './ErrorMessageContainer.js';
 import FilteredPlanetList from './FilteredPlanetList.js';
 import KeywordSearch from '../utils/KeywordSearch.js';
@@ -93,7 +93,11 @@ class FilterContainer extends React.Component {
           <SearchField props={this.onSearchFieldChange} />
           <SortField onChange={this.onSortFieldChange}
                     sortMethods={this.sortMethods}/>
-          <PriceRangeField props={this.onPriceFieldChange} />
+          <RangeField
+            onChange={this.onPriceFieldChange}
+            label='Price from:'
+            step='1000'
+          />
           <input
             type='button'
             name='updateResults'
