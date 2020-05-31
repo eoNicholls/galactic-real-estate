@@ -3,6 +3,7 @@ import PlanetCard from './PlanetCard.js';
 import ReactPaginate from 'react-paginate';
 import Switch from './Switch.js';
 import KeywordSearch from '../utils/KeywordSearch.js';
+import DropdownSelector from './DropdownSelector.js';
 
 
 class FilteredPlanetList extends React.Component {
@@ -33,6 +34,11 @@ class FilteredPlanetList extends React.Component {
 
   onToggleAnimationSwitch = () => {
     this.setState({ animateImage: !this.state.animateImage });
+  }
+
+  onCardsPerPageSelect = (event) => {
+    console.log(event.target.value);
+    this.setState({ cardsPerPage: event.target.value });
   }
 
   render() {
@@ -91,6 +97,13 @@ class FilteredPlanetList extends React.Component {
       forcePage={currentPage}
     />
 
+    const cardsPerPageOptions = [
+      <option value={10} key={10}>10</option>,
+      <option value={20} key={20}>20</option>,
+      <option value={50} key={50}>50</option>,
+      <option value={Infinity} key={Infinity}>All</option>
+    ];
+
 
     return (
       <React.Fragment>
@@ -99,7 +112,14 @@ class FilteredPlanetList extends React.Component {
             label='Animation'
             onClick={this.onToggleAnimationSwitch}
           />
+
           {Pagination}
+
+          <DropdownSelector
+            onChange={this.onCardsPerPageSelect}
+            label="Cards per page:"
+            options={cardsPerPageOptions}
+          />
         </div>
 
         <div className='planet-card-list'>
