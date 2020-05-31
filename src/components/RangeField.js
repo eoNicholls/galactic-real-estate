@@ -9,10 +9,10 @@ const PriceRangeField = ({ onChange, label, step }) => {
 
     // this check prevents it crashing when passed an empty array
     // i.e. when the user deletes all their input
-    if (value.length === 0){return '';}
+    if (value.length === 0) return '';
 
     let result = value.reduce((acca, digit) => {
-      if (digit === ','){return acca;}
+      if (digit === ',') return acca;
       return acca.concat(digit);
     });
 
@@ -27,20 +27,15 @@ const PriceRangeField = ({ onChange, label, step }) => {
     // if the last character in the string isNaN: return the rest of the string
     // this simulates <input type='number' />
     // necessary because I cannot use <input type='number' /> as that won't allow commas
-    if (isNaN(value.slice(-1))) {
-      value = value.slice(0, -1);
-    }
+    if (isNaN(value.slice(-1))) value = value.slice(0, -1);
 
     // remove commas for the event value that is sent to App.onPriceFieldChange()
     event.target.value = value;
     onChange(event);
 
     // changes the value to a more readable format (including commas)
-    if (value === '') {
-      target.value = '';
-    } else {
-      target.value = parseInt(value).toLocaleString('en-GB');
-    }
+    if (value === '') target.value = '';
+    else target.value = parseInt(value).toLocaleString('en-GB');
   }
 
 
