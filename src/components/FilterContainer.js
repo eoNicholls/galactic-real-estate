@@ -5,6 +5,7 @@ import RangeField from './RangeField.js';
 import ErrorMessageContainer from './ErrorMessageContainer.js';
 import FilteredPlanetList from './FilteredPlanetList.js';
 import KeywordSearch from '../utils/KeywordSearch.js';
+import AdvancedFiltering from './AdvancedFiltering.js';
 
 
 class FilterContainer extends React.Component {
@@ -15,14 +16,17 @@ class FilterContainer extends React.Component {
       searchField: '',
       priceRange: [-Infinity, Infinity],
       sortMethod: (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf(),
-      searchTerms: new Map()
+      searchTerms: new Map(),
+      advancedFiltering: false,
+      advancedFilteringFunctions: {}
     }
   }
 
   buffer = {
     searchField: '',
     priceRange: [-Infinity, Infinity],
-    sortMethod: (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf()
+    sortMethod: (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf(),
+    advancedFilteringFunctions: {}
   }
 
   onSearchFieldChange = (event) => {
@@ -46,7 +50,8 @@ class FilterContainer extends React.Component {
     this.setState({
       searchField: this.buffer.searchField,
       priceRange: this.buffer.priceRange,
-      sortMethod: this.buffer.sortMethod
+      sortMethod: this.buffer.sortMethod,
+      advancedFilteringFunctions: this.buffer.advancedFilteringFunctions
     });
 
     if (this.state.searchField !== '') searchTerms: KeywordSearch.parseSearchString(this.buffer.searchField)
@@ -84,15 +89,35 @@ class FilterContainer extends React.Component {
     ]
   }
 
+  onEnableAdvancedFilteringClick = () => {
+    this.setState({ advancedFiltering: !this.state.advancedFiltering });
+  }
+
+  onAdvancedFilteringChange = (filteringFunctions) => {
+    this.buffer.advancedFilteringFunctions = filteringFunctions;
+  }
+
 
   render() {
     const {objects, searchField, sortMethod, priceRange, searchTerms} = this.state;
+    console.log(this.state.advancedFilteringFunctions);
+
+    const advancedFiltering = (this.state.advancedFiltering !== false)
+      ? <AdvancedFiltering
+          attributes='placeholder'
+          onChange={this.onAdvancedFilteringChange}
+        />
+      : <></>
+
     return(
       <React.Fragment>
+        <button onClick={this.onEnableAdvancedFilteringClick}>Enable advanced filtering</button>
         <form>
           <SearchField props={this.onSearchFieldChange} />
-          <SortField onChange={this.onSortFieldChange}
-                    sortMethods={this.sortMethods}/>
+          <SortField
+            onChange={this.onSortFieldChange}
+            sortMethods={this.sortMethods}
+          />
           <RangeField
             onChange={this.onPriceFieldChange}
             label='Price from:'
@@ -102,7 +127,11 @@ class FilterContainer extends React.Component {
             type='button'
             name='updateResults'
             value='Update Results'
-            onClick ={this.onUpdateResultsClick} />
+            onClick ={this.onUpdateResultsClick}
+          />
+        </form>
+        <form>
+          {advancedFiltering}
         </form>
 
         <div>
@@ -113,7 +142,8 @@ class FilterContainer extends React.Component {
           planets={objects}
           searchTerms={searchTerms}
           sortMethod={sortMethod}
-          priceRange={priceRange}/>
+          priceRange={priceRange}
+        />
       </React.Fragment>
     )
   }
