@@ -31,7 +31,11 @@ class AttributeRange extends React.Component {
   }
 
   render() {
-    this.state.onChange(this.state.attribute, this.createFunction());
+    const check = this.state.range.reduce((acc, item) => {
+      return Number.isFinite(item) || acc;
+    }, false);
+    
+    if (check) this.state.onChange(this.state.attribute, this.createFunction());
 
     return (
       <RangeField

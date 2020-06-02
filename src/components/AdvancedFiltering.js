@@ -23,20 +23,20 @@ class AdvancedFiltering extends React.Component {
     return(
       <div>
         <AttributeRange
-          attribute={'size'}
+          attribute={'diameter'}
           onChange={this.onFieldChange}
-          label={'Size between:'}
+          label={'Diameter between:'}
           step={'1000'}
         />
         <AttributeDropdown
-          attribute={'dropdown'}
+          attribute={'star'}
           onChange={this.onFieldChange}
           label={'Select from:'}
           options={[
             <option value={''}>-</option>,
-            <option value={'one'}>one</option>,
-            <option value={'two'}>two</option>,
-            <option value={'three'}>three</option>
+            <option value={'Procyon'}>Procyon</option>,
+            <option value={'Sirius A'}>Sirius A</option>,
+            <option value={'61 Cygni'}>61 Cygni</option>
           ]}
         />
       </div>

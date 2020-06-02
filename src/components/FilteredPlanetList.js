@@ -15,6 +15,7 @@ class FilteredPlanetList extends React.Component {
       searchTerms: props.searchTerms,
       priceRange: props.priceRange,
       sortMethod: props.sortMethod,
+      advancedFilteringFunctions: props.advancedFilteringFunctions,
       animateImage: true
     }
   }
@@ -23,7 +24,8 @@ class FilteredPlanetList extends React.Component {
     return {
       searchTerms: props.searchTerms,
       priceRange: props.priceRange,
-      sortMethod: props.sortMethod
+      sortMethod: props.sortMethod,
+      advancedFilteringFunctions: props.advancedFilteringFunctions
     };
   }
 
@@ -43,7 +45,8 @@ class FilteredPlanetList extends React.Component {
       sortMethod,
       priceRange,
       animateImage,
-      searchTerms
+      searchTerms,
+      advancedFilteringFunctions
     } = this.state;
 
     const filteredPlanets = planets.filter(planet => {
@@ -52,6 +55,16 @@ class FilteredPlanetList extends React.Component {
         if (!(priceRange[0] <= planet.price) || !(planet.price <= priceRange[1])) {
           return false
         }
+      }
+
+      // advanced filtering check
+      const afKeys = Object.keys(advancedFilteringFunctions);
+      if (afKeys.length > 0) {
+        const advancedFilteringCheck = afKeys.every(key => {
+            const func = advancedFilteringFunctions[key];
+            return func(planet[key]);
+        })
+        if (advancedFilteringCheck === false) return false;
       }
 
       // check searchTerms against planet attributes

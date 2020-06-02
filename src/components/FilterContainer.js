@@ -99,8 +99,7 @@ class FilterContainer extends React.Component {
 
 
   render() {
-    const {objects, searchField, sortMethod, priceRange, searchTerms} = this.state;
-    console.log(this.state.advancedFilteringFunctions);
+    const {objects, searchField, sortMethod, priceRange, searchTerms, advancedFilteringFunctions} = this.state;
 
     const advancedFiltering = (this.state.advancedFiltering !== false)
       ? <AdvancedFiltering
@@ -130,6 +129,7 @@ class FilterContainer extends React.Component {
             onClick ={this.onUpdateResultsClick}
           />
         </form>
+
         <form>
           {advancedFiltering}
         </form>
@@ -143,6 +143,7 @@ class FilterContainer extends React.Component {
           searchTerms={searchTerms}
           sortMethod={sortMethod}
           priceRange={priceRange}
+          advancedFilteringFunctions={advancedFilteringFunctions}
         />
       </React.Fragment>
     )

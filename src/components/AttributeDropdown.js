@@ -23,8 +23,9 @@ class AttributeDropdown extends React.Component {
   }
 
   render () {
-    this.state.onChange(this.state.attribute, this.createFunction());
-    
+    if (this.state.selected != '')
+      this.state.onChange(this.state.attribute, this.createFunction());
+
     return (
       <DropdownSelector
         onChange={this.onDropdownSelectorChange}
