@@ -19,14 +19,76 @@ class AdvancedFiltering extends React.Component {
     this.state.onChange(this.filteringFunctions);
   }
 
+  /*
+    add AttributeRange components according to the following pattern:
+    [attribute, label, step (optional)]
+  */
+  rangeFilters = [
+    ['diameter', 'Diameter between:']
+  ];
+
+  /*
+    add AttributeDropdown components according to the following pattern:
+    [attribute, label, array of options:
+      [
+        value/innherHTML
+      ]
+    ]
+  */
+  dropdownFilters = [
+    ['star', 'Star:',
+      [
+        '61 Cygni',
+        'Alpha Centauri',
+        'Epsilon Eridani',
+        'EZ Aquarii',
+        'Gliese',
+        'Groombridge',
+        'Kruger',
+        'Lacaille 9352',
+        'Lalande',
+        'Luyten',
+        'Procyon',
+        'Ross 128',
+        'Ross 154',
+        'Sirius A',
+        'Sirius B',
+        'Struve 2398 A',
+        'Tau Ceti'
+      ]
+    ]
+  ];
+
   render() {
     return(
       <div>
-        <AttributeRange
+        {
+          this.rangeFilters.map(att => {
+            return <AttributeRange
+              attribute={att[0]}
+              label={att[1]}
+              onChange={this.onFieldChange}
+            />
+          })
+        }
+        {
+          this.dropdownFilters.map(att => {
+            return <AttributeDropdown
+              attribute={att[0]}
+              label={att[1]}
+              onChange={this.onFieldChange}
+              options={
+                att[2].map(option => {
+                  return <option value={option}>{option}</option>
+                })
+              }
+            />
+          })
+        }
+        {/*<AttributeRange
           attribute={'diameter'}
           onChange={this.onFieldChange}
           label={'Diameter between:'}
-          step={'1000'}
         />
         <AttributeDropdown
           attribute={'star'}
@@ -38,7 +100,7 @@ class AdvancedFiltering extends React.Component {
             <option value={'Sirius A'}>Sirius A</option>,
             <option value={'61 Cygni'}>61 Cygni</option>
           ]}
-        />
+        />*/}
       </div>
     );
   }

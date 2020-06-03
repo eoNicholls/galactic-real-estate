@@ -8,7 +8,7 @@ class AttributeDropdown extends React.Component {
       attribute: props.attribute,
       onChange: props.onChange,
       label: props.label,
-      options: props.options,
+      options: [<option value=''>-</option>].concat(props.options),
       selected: ''
     }
   }
