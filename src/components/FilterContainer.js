@@ -101,13 +101,6 @@ class FilterContainer extends React.Component {
   render() {
     const {objects, searchField, sortMethod, priceRange, searchTerms, advancedFilteringFunctions} = this.state;
 
-    const advancedFiltering = (this.state.advancedFiltering !== false)
-      ? <AdvancedFiltering
-          attributes='placeholder'
-          onChange={this.onAdvancedFilteringChange}
-        />
-      : <></>
-
     return(
       <React.Fragment>
         <form>
@@ -131,7 +124,13 @@ class FilterContainer extends React.Component {
 
         <button onClick={this.onEnableAdvancedFilteringClick}>Advanced Filters</button>
         <form>
-          {advancedFiltering}
+          {
+            this.state.advancedFiltering
+            && <AdvancedFiltering
+                  attributes='placeholder'
+                  onChange={this.onAdvancedFilteringChange}
+                />
+          }
         </form>
 
         <div>
