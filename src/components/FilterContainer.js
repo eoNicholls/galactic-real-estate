@@ -110,7 +110,6 @@ class FilterContainer extends React.Component {
 
     return(
       <React.Fragment>
-        <button onClick={this.onEnableAdvancedFilteringClick}>Enable advanced filtering</button>
         <form>
           <SearchField props={this.onSearchFieldChange} />
           <SortField
@@ -130,6 +129,7 @@ class FilterContainer extends React.Component {
           />
         </form>
 
+        <button onClick={this.onEnableAdvancedFilteringClick}>Advanced Filters</button>
         <form>
           {advancedFiltering}
         </form>
