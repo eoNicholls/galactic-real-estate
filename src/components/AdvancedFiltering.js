@@ -16,7 +16,6 @@ class AdvancedFiltering extends React.Component {
   filteringFunctions = {}
 
   onFieldChange = (attribute, func) => {
-    console.log(attribute, func);
     if (func === null) delete this.filteringFunctions[attribute]
     else this.filteringFunctions[attribute] = func;
     this.state.onChange(this.filteringFunctions);
@@ -80,12 +79,12 @@ class AdvancedFiltering extends React.Component {
   ];
 
   render() {
-    console.log(this.filteringFunctions);
     return(
       <div>
         {
           this.rangeFilters.map(att => {
             return <AttributeRange
+              key={att[0]}
               attribute={att[0]}
               label={att[1]}
               onChange={this.onFieldChange}
@@ -95,12 +94,13 @@ class AdvancedFiltering extends React.Component {
         {
           this.dropdownFilters.map(att => {
             return <AttributeDropdown
+              key={att[0]}
               attribute={att[0]}
               label={att[1]}
               onChange={this.onFieldChange}
               options={
                 att[2].map(option => {
-                  return <option value={option}>{capitalise(option)}</option>
+                  return <option key={option} value={option}>{capitalise(option)}</option>
                 })
               }
             />
