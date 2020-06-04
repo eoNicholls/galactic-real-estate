@@ -22,7 +22,13 @@ class AttributeRange extends React.Component {
 
   onRangeFieldChange = (event) => {
     const target = event.target;
-    const value = parseInt(target.value);
+    const modifier = (target.name === 'min')
+      ? -1
+      : 1
+    const value = (target.value === '')
+      ? modifier * Infinity
+      : parseInt(target.value);
+      
     const currentRange = this.state.range;
     this.setState({ range: (target.name === 'min')
       ? [value, currentRange[1]]
