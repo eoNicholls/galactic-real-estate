@@ -36,7 +36,8 @@ class AdvancedFiltering extends React.Component {
     ]
   */
   dropdownFilters = [
-    ['star', 'Star:',
+    [
+      'star', 'Star:',
       [
         '61 Cygni',
         'Alpha Centauri',
@@ -56,6 +57,22 @@ class AdvancedFiltering extends React.Component {
         'Struve 2398 A',
         'Tau Ceti'
       ]
+    ],
+    [
+      'composition', 'Composition:',
+      ['Rocky', 'Gaseous', 'Liquid']
+    ],
+    [
+      'atmosphere', 'Atmosphere:',
+      ['Breathable', 'Toxic to humans', 'None']
+    ],
+    [
+      'water', 'Water state:',
+      ['Liquid', 'Frozen', 'None']
+    ],
+    [
+      'life', 'Life:',
+      ['Cellular', 'Multicellular', 'Intelligent', 'None']
     ]
   ];
 
