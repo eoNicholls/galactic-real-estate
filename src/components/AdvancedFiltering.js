@@ -85,22 +85,6 @@ class AdvancedFiltering extends React.Component {
             />
           })
         }
-        {/*<AttributeRange
-          attribute={'diameter'}
-          onChange={this.onFieldChange}
-          label={'Diameter between:'}
-        />
-        <AttributeDropdown
-          attribute={'star'}
-          onChange={this.onFieldChange}
-          label={'Select from:'}
-          options={[
-            <option value={''}>-</option>,
-            <option value={'Procyon'}>Procyon</option>,
-            <option value={'Sirius A'}>Sirius A</option>,
-            <option value={'61 Cygni'}>61 Cygni</option>
-          ]}
-        />*/}
       </div>
     );
   }
