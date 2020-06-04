@@ -26,7 +26,10 @@ class AdvancedFiltering extends React.Component {
     [attribute, label, step (optional)]
   */
   rangeFilters = [
-    ['diameter', 'Diameter between:']
+    ['diameter', 'Diameter'],
+    ['averageTemperature', 'Average temperature'],
+    ['orbitalPeriod', 'Orbital period'],
+    ['dayLength', 'Day length']
   ];
 
   /*

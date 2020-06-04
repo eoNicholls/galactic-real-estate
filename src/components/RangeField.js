@@ -41,7 +41,7 @@ const PriceRangeField = ({ onChange, label, step }) => {
 
   return (
     <div>
-      <label>{label}</label>
+      <label>{label} from:</label>
       <input name='min' placeholder='Min' step={step} onChange={onChangeEvent} />
       <label>to:</label>
       <input name='max' placeholder='Max' step={step} onChange={onChangeEvent} />
