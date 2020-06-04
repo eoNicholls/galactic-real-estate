@@ -15,7 +15,9 @@ class AttributeDropdown extends React.Component {
 
   createFunction = () => {
     const val = this.state.selected;
-    return (a => a === val);
+    return (val === '')
+      ? null
+      : a => a === val
   }
 
   onDropdownSelectorChange = (event) => {
@@ -23,8 +25,7 @@ class AttributeDropdown extends React.Component {
   }
 
   render () {
-    if (this.state.selected != '')
-      this.state.onChange(this.state.attribute, this.createFunction());
+    this.state.onChange(this.state.attribute, this.createFunction());
 
     return (
       <DropdownSelector

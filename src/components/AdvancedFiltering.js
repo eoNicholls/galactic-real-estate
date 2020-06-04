@@ -1,6 +1,7 @@
 import React from 'react';
 import AttributeRange from './AttributeRange.js';
 import AttributeDropdown from './AttributeDropdown.js';
+import { capitalise } from '../utils/UtilityFunctions.js';
 
 
 class AdvancedFiltering extends React.Component {
@@ -15,7 +16,9 @@ class AdvancedFiltering extends React.Component {
   filteringFunctions = {}
 
   onFieldChange = (attribute, func) => {
-    this.filteringFunctions[attribute] = func;
+    console.log(attribute, func);
+    if (func === null) delete this.filteringFunctions[attribute]
+    else this.filteringFunctions[attribute] = func;
     this.state.onChange(this.filteringFunctions);
   }
 
@@ -60,23 +63,24 @@ class AdvancedFiltering extends React.Component {
     ],
     [
       'composition', 'Composition:',
-      ['Rocky', 'Gaseous', 'Liquid']
+      ['rocky', 'gaseous', 'liquid']
     ],
     [
       'atmosphere', 'Atmosphere:',
-      ['Breathable', 'Toxic to humans', 'None']
+      ['breathable', 'toxic to humans', 'none']
     ],
     [
       'water', 'Water state:',
-      ['Liquid', 'Frozen', 'None']
+      ['liquid', 'frozen', 'none']
     ],
     [
       'life', 'Life:',
-      ['Cellular', 'Multicellular', 'Intelligent', 'None']
+      ['cellular', 'multicellular', 'intelligent', 'none']
     ]
   ];
 
   render() {
+    console.log(this.filteringFunctions);
     return(
       <div>
         {
@@ -96,7 +100,7 @@ class AdvancedFiltering extends React.Component {
               onChange={this.onFieldChange}
               options={
                 att[2].map(option => {
-                  return <option value={option}>{option}</option>
+                  return <option value={option}>{capitalise(option)}</option>
                 })
               }
             />

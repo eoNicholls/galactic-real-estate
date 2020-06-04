@@ -1,6 +1,7 @@
 import React from 'react';
 import AstraeaCanvas from './AstraeaCanvas.js';
 import SaveStar from './SaveStar.js';
+import { capitalise } from '../utils/UtilityFunctions.js';
 
 
 class PlanetCard extends React.Component {
@@ -77,22 +78,22 @@ class PlanetCard extends React.Component {
       ],
       [
         'Composition',
-        composition,
+        capitalise(composition),
         ''
       ],
       [
         'Atmosphere',
-        atmosphere,
+        capitalise(atmosphere),
         ''
       ],
       [
         'Water',
-        water,
+        capitalise(water),
         ''
       ],
       [
         'Life',
-        life,
+        capitalise(life),
         ''
       ],
       [
