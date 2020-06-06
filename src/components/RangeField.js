@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const PriceRangeField = ({ onChange, label, step }) => {
+const RangeField = ({ onChange, label, step }) => {
 
   // this function changes the number format from iii,iii,iii back to iiiiiiiii
   const fromLocaleString = function(value) {
@@ -55,4 +55,4 @@ const PriceRangeField = ({ onChange, label, step }) => {
 }
 
 
-export default PriceRangeField;
+export default RangeField;
