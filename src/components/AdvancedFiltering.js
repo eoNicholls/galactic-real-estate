@@ -16,6 +16,10 @@ class AdvancedFiltering extends React.Component {
   filteringFunctions = {}
 
   onFieldChange = (attribute, func) => {
+    // delete this.filteringFunctions[attribute];
+    // if (func !== null) this.filteringFunctions[attribute] = func;
+    // this.state.onChange(this.filteringFunctions);
+
     if (func === null) delete this.filteringFunctions[attribute]
     else this.filteringFunctions[attribute] = func;
     this.state.onChange(this.filteringFunctions);

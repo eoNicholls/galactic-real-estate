@@ -28,7 +28,7 @@ class AttributeRange extends React.Component {
     const value = (target.value === '')
       ? modifier * Infinity
       : parseInt(target.value);
-      
+
     const currentRange = this.state.range;
     this.setState({ range: (target.name === 'min')
       ? [value, currentRange[1]]
@@ -37,11 +37,7 @@ class AttributeRange extends React.Component {
   }
 
   render() {
-    const check = this.state.range.reduce((acc, item) => {
-      return Number.isFinite(item) || acc;
-    }, false);
-
-    if (check) this.state.onChange(this.state.attribute, this.createFunction());
+    this.state.onChange(this.state.attribute, this.createFunction());
 
     return (
       <RangeField

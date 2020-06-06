@@ -19,7 +19,6 @@ const PriceRangeField = ({ onChange, label, step }) => {
     return result;
   }
 
-
   const onChangeEvent = function(event) {
     let target = event.target;
     let value = fromLocaleString(target.value);
@@ -27,7 +26,12 @@ const PriceRangeField = ({ onChange, label, step }) => {
     // if the last character in the string isNaN: return the rest of the string
     // this simulates <input type='number' />
     // necessary because I cannot use <input type='number' /> as that won't allow commas
-    if (isNaN(value.slice(-1))) value = value.slice(0, -1);
+    // had to allow an exception for '-' so negative values can be accepted
+    const newChar = value.slice(-1);
+    if (isNaN(newChar)) {
+      if (value.length === 1 && newChar === '-'); // do nothing
+      else value = value.slice(0, -1)
+    };
 
     // remove commas for the event value that is sent to parent component
     event.target.value = value;
@@ -35,6 +39,7 @@ const PriceRangeField = ({ onChange, label, step }) => {
 
     // changes the value to a more readable format (including commas)
     if (value === '') target.value = '';
+    else if (value === '-') target.value = '-';
     else target.value = parseInt(value).toLocaleString('en-GB');
   }
 
