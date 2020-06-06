@@ -111,7 +111,7 @@ class FilterContainer extends React.Component {
           />
           <RangeField
             onChange={this.onPriceFieldChange}
-            label='Price from:'
+            label='Price'
             step='1000'
           />
           <input
