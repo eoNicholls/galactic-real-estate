@@ -9,6 +9,7 @@ class AttributeRange extends React.Component {
       attribute: props.attribute,
       onChange: props.onChange,
       label: props.label,
+      unitSymbol: props.unitSymbol,
       step: props.step,
       range: [-Infinity, Infinity]
     }
@@ -43,6 +44,7 @@ class AttributeRange extends React.Component {
       <RangeField
         onChange={this.onRangeFieldChange}
         label={this.state.label}
+        unitSymbol={this.state.unitSymbol}
         step={this.state.step || '1'}
       />
     )

@@ -27,13 +27,13 @@ class AdvancedFiltering extends React.Component {
 
   /*
     add AttributeRange components according to the following pattern:
-    [attribute, label, step (optional)]
+    [attribute, label, symbol (optional), step (optional)]
   */
   rangeFilters = [
-    ['diameter', 'Diameter'],
-    ['averageTemperature', 'Average temperature'],
-    ['orbitalPeriod', 'Orbital period'],
-    ['dayLength', 'Day length']
+    ['diameter', 'Diameter', 'km'],
+    ['averageTemperature', 'Average temperature', String.fromCharCode(176)+'C'],
+    ['orbitalPeriod', 'Orbital period', 'days'],
+    ['dayLength', 'Day length', 'hours']
   ];
 
   /*
@@ -94,6 +94,7 @@ class AdvancedFiltering extends React.Component {
               key={att[0]}
               attribute={att[0]}
               label={att[1]}
+              unitSymbol={att[2]}
               onChange={this.onFieldChange}
             />
           })

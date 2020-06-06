@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const RangeField = ({ onChange, label, step }) => {
+const RangeField = ({ onChange, label, step, unitSymbol }) => {
 
   // this function changes the number format from iii,iii,iii back to iiiiiiiii
   const fromLocaleString = function(value) {
@@ -43,10 +43,14 @@ const RangeField = ({ onChange, label, step }) => {
     else target.value = parseInt(value).toLocaleString('en-GB');
   }
 
+  console.log(String(unitSymbol));
+  unitSymbol = (unitSymbol)
+    ? ' (' + String(unitSymbol) +')'
+    : ''
 
   return (
     <div>
-      <label>{label} from:</label>
+      <label>{label}{unitSymbol} from:</label>
       <input name='min' placeholder='Min' step={step} onChange={onChangeEvent} />
       <label>to:</label>
       <input name='max' placeholder='Max' step={step} onChange={onChangeEvent} />
