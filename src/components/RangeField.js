@@ -43,7 +43,6 @@ const RangeField = ({ onChange, label, step, unitSymbol }) => {
     else target.value = parseInt(value).toLocaleString('en-GB');
   }
 
-  console.log(String(unitSymbol));
   unitSymbol = (unitSymbol)
     ? ' (' + String(unitSymbol) +')'
     : ''
