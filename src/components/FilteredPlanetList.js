@@ -84,8 +84,12 @@ class FilteredPlanetList extends React.Component {
     // sorting
     PlanetCardArray.sort(sortMethod);
 
+    // card count
+    const planetCardArrayLength = PlanetCardArray.length;
+    const cardCount = <p className='card-count'>{planetCardArrayLength} results</p>
+
     // pagination
-    const pageCount = Math.ceil(PlanetCardArray.length / cardsPerPage);
+    const pageCount = Math.ceil(planetCardArrayLength / cardsPerPage);
     const pageStartIndex = currentPage * cardsPerPage;
     PlanetCardArray = PlanetCardArray.splice(pageStartIndex, cardsPerPage);
 
@@ -113,6 +117,7 @@ class FilteredPlanetList extends React.Component {
             onClick={this.onToggleAnimationSwitch}
           />
           {Pagination}
+          {cardCount}
         </div>
 
         <div className='planet-card-list'>
