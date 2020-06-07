@@ -87,7 +87,7 @@ class AdvancedFiltering extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className='advanced-filtering'>
         {
           this.rangeFilters.map(att => {
             return <AttributeRange

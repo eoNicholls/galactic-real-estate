@@ -11,6 +11,8 @@
 body {
   background: #202030;
   color: #cccccc;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 header {
@@ -32,7 +34,16 @@ form {
   align-items: center;
 }
 
-form > div {
+.filter-field {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.filter-field > input {
+  max-width: 100px;
+}
+
+.range-field {
   display: flex;
   flex-direction: column;
 }
@@ -167,21 +178,3 @@ td > p {
   padding: 0 5px;
   /* line-height: 1rem; */
 }
-
-/* .planet-attributes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(10, 1fr);
-}
-
-.planet-attributes ul {
-  list-style: none;
-}
-
-.attributes-list {
-  grid-column-start: 1;
-}
-
-.values-list {
-  grid-column-start: 2;
-} */

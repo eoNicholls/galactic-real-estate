@@ -49,10 +49,9 @@ const RangeField = ({ onChange, label, step, unitSymbol }) => {
     : ''
 
   return (
-    <div>
-      <label>{label}{unitSymbol} from:</label>
+    <div className='filter-field range-field'>
+      <label>{label}{unitSymbol}</label>
       <input name='min' placeholder='Min' step={step} onChange={onChangeEvent} />
-      <label>to:</label>
       <input name='max' placeholder='Max' step={step} onChange={onChangeEvent} />
     </div>
   )
