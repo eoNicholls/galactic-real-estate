@@ -24,13 +24,18 @@ class FilterContainer extends React.Component {
 
   buffer = {
     searchField: '',
+    searchTerms: new Map(),
     priceRange: [-Infinity, Infinity],
     sortMethod: (a, b) => b.props.props.dateAdded.valueOf() - a.props.props.dateAdded.valueOf(),
     advancedFilteringFunctions: {}
   }
 
   onSearchFieldChange = (event) => {
-    this.buffer.searchField = event.target.value;
+    const fieldValue = event.target.value;
+    this.buffer.searchField = fieldValue;
+    this.buffer.searchTerms = (fieldValue !== '')
+      ? KeywordSearch.parseSearchString(fieldValue)
+      : new Map()
   }
 
   onPriceFieldChange = (event) => {
@@ -51,10 +56,9 @@ class FilterContainer extends React.Component {
       searchField: this.buffer.searchField,
       priceRange: this.buffer.priceRange,
       sortMethod: this.buffer.sortMethod,
-      advancedFilteringFunctions: this.buffer.advancedFilteringFunctions
+      advancedFilteringFunctions: this.buffer.advancedFilteringFunctions,
+      searchTerms: this.buffer.searchTerms
     });
-
-    if (this.state.searchField !== '') searchTerms: KeywordSearch.parseSearchString(this.buffer.searchField)
   }
 
   sortMethods = {
@@ -100,6 +104,7 @@ class FilterContainer extends React.Component {
 
   render() {
     const {objects, searchField, sortMethod, priceRange, searchTerms, advancedFilteringFunctions} = this.state;
+    console.log(searchField, searchTerms);
 
     return(
       <React.Fragment>
